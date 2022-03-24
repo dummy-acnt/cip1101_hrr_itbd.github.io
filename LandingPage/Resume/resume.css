@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(238, 182, 145);
+}
+h1{
+    
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+
+}
+ul.a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+ul.b{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+ul.c{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+ul.d{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: maroon;
+    color: whitesmoke;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    text-shadow: 5px 5px 6px black;
+    text-transform:uppercase;
+}
+p{
+    text-align: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+ul.prog{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+ul.data{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type:disc ;
+}
+ul.aa{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+ul.bb{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+ul.cc{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+ul.work{
+    border-left:5px solid darkred;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 1px 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+ol.seminar{
+    background: #da7f5c;
+    padding:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul.training {
+    background: #da7f5c;
+    padding:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol.seminar li{
+    background: #dfdbdb;
+    padding: 1px;
+    margin-left: 35px;
+}
+ul.training li{
+    background: #dfdbdb;
+    margin: 5px;
+}
+ul.inter{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-left:5px solid darkred;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 1px 2px;
+}
+ul.hobbies {
+    text-align: center;
+    list-style-type: none;
+    padding: 0.4em;
+    border: 3px solid rgb(145, 43, 43);
+    margin-right: 30em;
+    max-width: 700px;
+    margin: auto;
+    border: 3px solid rgb(163, 65, 65);
+    background-color:rgb(231, 180, 129);
+    color: rgb(10, 10, 10);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+ul.hobbies li {
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(107, 38, 38);
+
+}
+ul.hobbies li:last-child {
+    border-bottom: none;
+}
+ul.tertiary{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2;
+    list-style-type: none;
+    border: 1px solid;
+    padding: 0.4em;
+    border-bottom: 2px solid rgb(107, 38, 38);
+    margin-right: 50em;
+    max-width: 900px;
+    margin: auto;
+}
+ul.secondary{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2;
+    list-style-type: none;
+    border: 1px solid;
+    padding: 0.4em;
+    border-bottom: 2px solid rgb(107, 38, 38);
+    margin-right: 50em;
+    max-width: 900px;
+    margin: auto;
+}
+ul.junior{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2;
+    list-style-type: none;
+    border: 1px solid;
+    padding: 0.4em;
+    border-bottom: 2px solid rgb(107, 38, 38);
+    margin-right: 50em;
+    max-width: 900px;
+    margin: auto;
+}
+ul.primary{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2;
+    list-style-type: none;
+    border: 1px solid;
+    padding: 0.4em;
+    border-bottom: 2px solid rgb(107, 38, 38);
+    margin-right: 50em;
+    max-width: 900px;
+    margin: auto;
+}
+
