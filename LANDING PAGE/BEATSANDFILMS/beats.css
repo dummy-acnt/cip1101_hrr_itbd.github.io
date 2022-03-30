@@ -205,11 +205,25 @@ h3{
     color: #d1d1d1;
 }
 
-.playlist{
+.ep{
     height:450px;
     width: 90%;
     margin-left: 5%;
-    background-color:#181818;
+    background-image: linear-gradient(to bottom right,#4B5B99,#A777A9);
+}
+
+.jp{
+    height:450px;
+    width: 90%;
+    margin-left: 5%;
+    background-image: linear-gradient(to bottom right,#C88477, #3ED7C2);
+}
+
+.lp{
+    height:450px;
+    width: 90%;
+    margin-left: 5%;
+    background-image: linear-gradient(to bottom right,#0AA79B, #363B68);
 }
 
 .box{
@@ -228,7 +242,21 @@ h3{
     margin-left: 2%;
 }
 
-.playlist img{
+.ep img{
+    float: left;
+    height: 200px;
+    max-width: 100%;
+    margin-right: 2%;
+}
+
+.jp img{
+    float: left;
+    height: 200px;
+    max-width: 100%;
+    margin-right: 2%;
+}
+
+.lp img{
     float: left;
     height: 200px;
     max-width: 100%;
@@ -251,5 +279,5 @@ h4{
 h6{
     margin-top: 2%;
     font-size: 16px;
-    color: #e12b38;
+    color: #d1d1d1;
 }
