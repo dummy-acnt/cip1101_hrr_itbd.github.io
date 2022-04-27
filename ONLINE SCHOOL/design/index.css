@@ -1,0 +1,146 @@
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+
+.banner{
+    height: 400px;
+    width: 100%;
+    background-color:#282A35;
+}
+
+.banner img{
+    float: right;
+    padding-left: 25px;
+}
+
+.banner h1{
+    color:#f2f2f2;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 130px;
+    font-family:Georgia;
+}
+
+.banner p{
+    color:#f2f2f2;
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 60px;
+    font-family: Tahoma;
+}
+
+span{
+    color:#EB3F3F;
+}
+
+p{
+    font-family: Tahoma;
+}
+
+.details{
+    display: flex;
+}
+
+.details h2{
+    font-family: Arial;
+}
+
+.details img{
+    height:80px;
+    max-width:100%;
+}
+
+.study, .practice, .apply{
+    width: 250px;
+    padding: 30px 90px;
+}
+
+.box{
+    height: 1280px;
+    width: 100%;
+    background-color: #282A35;
+}
+
+.box1,.box2,.box3{
+    display: flex;
+}
+
+h3{
+    font-family: Arial;
+    font-size: 30px;
+}
+
+.learn img,.quiz img,.exercise img{
+    height:350px;
+    max-width: 100%;
+}
+
+.learn,.quiz,.exercise{
+    margin-top: 4%;
+    margin-left: 8%;
+    border-radius: 10px;
+}
+
+.learntxt,.quiztxt,.exercisetxt{
+    height: 300px;
+    width: 450px;
+    margin-top: 2%;
+    padding: 30px 30px;
+    margin-left: 8%;
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-size: 20px;
+}
+
+.box a{
+    text-decoration: none;
+    color: #EB3F3F;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.box a:hover{
+    color: #fc6363;
+}
+
+.footer{
+    width: 100%;
+    height:80px;
+    background-color:#191b22;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#f2f2f2;
+    text-align: center;
+    font-size: 16px;
+    padding: 25px 75px;
+    float: left;
+    margin-left: 5%;
+}
+
+.footer a:hover{
+    color:#c7c7c7;
+    text-decoration: underline;
+}
