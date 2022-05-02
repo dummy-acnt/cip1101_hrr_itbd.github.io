@@ -1,0 +1,79 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color: #F7E1B1;
+    background-color: #ED4742;
+    font-family: Arial;
+    font-size: 2.5em;
+}
+
+fieldset{
+    background-color: #EC9740;
+    border:none;
+    width: 900px;
+    margin: auto;
+}
+
+label{
+    font-family: Tahoma;
+    font-size: 2em;
+    display:block;
+    color: #F7E1B1;
+    padding: 10px 5px;
+}
+
+.info input{
+    width: 500px;
+    height: 30px;
+}
+
+textarea{
+    height: 80px;
+    width: 500px;
+    resize: none;
+}
+
+.order img{
+    height: 100px;
+    max-width: 100%;
+    padding: 5px 30px;
+}
+
+.order label{
+    display: inline-block;
+}
+
+.burger img, .pasta img, .fries img, .drinks img, .delivery img{
+    height: 100px;
+    max-width: 100%;
+}
+
+.burger input[type="text"], .pasta input[type="text"], .fries input[type="text"], .drinks input[type="text"]{
+    height: 30px;
+    width: 50px;
+}
+
+p{
+    font-family: Tahoma;
+    font-size: 2em;
+    color: #F7E1B1;
+}
+
+.feedback{
+    display: inline;
+}
+
+input[type="submit"]{
+    height: 50px;
+    width: 150px;
+    background-color: #ED4742;
+    color: #F7E1B1;
+    padding: 10px 10px;
+    border: none;
+    font-size: 24px;
+}
