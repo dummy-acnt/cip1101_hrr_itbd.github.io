@@ -1,0 +1,237 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--TAUP, NORSIMA-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>CSS TEXT FORMAT</title>
+  </head>
+   
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+      .size{
+        width:  40%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        @media only screen and (max-width: 480px) {
+  .size{
+    width: 100%;
+  }
+}
+
+        
+/* The side navigation menu */
+.sidebar {
+  margin-top: 7%;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    display: inline-block;
+    font-size: 8px;
+  }
+}
+
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+     </style>
+     <div class="nav">
+      <div>
+          <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+      </div>
+      <a href="../../../learn.html">Learn</a>
+      <a href="../../../../exercise/exercise.html">Exercise</a>
+      <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+  </div>
+     <div class="sidebar" >
+      <a href="css.html"><b>CSS INTRODUCTION</b></a>
+      <a href="selctors.html"><b>CSS SELECTORS</b></a>
+      <a href="cssBackground.html"><strong>CSS BACKGROUND</strong></a>
+      <a class="active" href="cssTextFormat.html"><b>CSS TEXT FORMAT</b></a>
+      <a href="cssBorders.html"><b>CSS BORDERS</b></a>
+      <a href="cssFonts.html"><b>CSS FONTS</b></a>
+      <a href="cssComments.html"><b>CSS COMMENTS</b></a>
+       <a href="margin&padding.html"><b>CSS MARGIN & PADDING</b></a>>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center text-danger">CSS TEXT FORMATTING</h1> <br>
+    <br>
+    <p class="text-center">CSS text formatting properties is used to format text and style text. </p>
+    <br><br><br>
+    <hr>
+    <h5 class="text-danger">Text-color</h5><br>
+    <p>Text-color property is used to set the color of the text.<br> 
+        Text-color can be set by using the name “red”, hex value “#ff0000” or by its RGB value“rgb(255, 0, 0).  </p>
+        <br>
+        <b>Example: </b>
+        <img src="../../../../gallery/textcss.PNG" class="size">
+        <br>
+        <b>Output: </b>
+        <br>
+        <img src="../../../../gallery/outputtxtcss.PNG" class="size">
+        <br><hr>
+
+
+        <h5 class="text-danger">Text Alignment</h5><br>
+        <p>Text alignment property is used to set the horizontal alignment of the text. <br>
+            The text can be set to left, right, centered and justified alignment. <br>
+            In justified alignment, line is stretched such that left and right margins are straight.   </p>
+            <br>
+            <b>Example: </b>
+            <img src="../../../../gallery/alignCode.PNG" class="size">
+            <br>
+            <b>Output: </b>
+            <br>
+            <img src="../../../../gallery/align.PNG" class="size">
+            <br><hr>
+
+            <h5 class="text-danger">Text Tranformation</h5><br>
+        <p>Uppercase, lowercase, and capitalization are all options for text transformation.<br>
+            To make the initial letter of each word uppercase, use capitalise.   </p>
+            <br>
+            <b>Example: </b>
+            <img src="../../../../gallery/textttransform.PNG" class="size">
+            <br>
+            <b>Output: </b>
+            <br>
+            <img src="../../../../gallery/textttransformOutput.PNG" class="size">
+            <br><hr>
+    
+
+            <h5 class="text-danger">Text Shadow</h5><br>
+            <p>Text shadow property is used to add shadow to the text. 
+                You can specify the horizontal size, vertical size and shadow color for the text.   </p>
+                <br>
+                <img src="../../../../gallery/syntaxShadow.PNG" class="size">
+                <br><hr>
+
+
+                <h5 class="text-danger">Word Spacing</h5><br>
+                <p>Word spacing is used to specify the space between the words of the line.    </p>
+                    <br>
+                    <img src="../../../../gallery/syntaxWordSpacing.PNG" class="size">
+                    <br><hr>
+
+
+                    <h5 class="text-danger">Line height</h5><br>
+                    <p>This property is used to set the space between the lines.     </p>
+                        <br>
+                        <img src="../../../../gallery/lineheight.PNG"class="size">
+                        <br><hr>
+
+
+
+                        <h5 class="text-danger">Text Direction</h5><br>
+                            <p>Text direction property is used to set the direction of the text. <br>
+                                The direction can be set by using rtl : right to left . <br>
+                                Left to right is the default direction of the text.      </p>
+                                
+                            <br>
+                            <img src="../../../../gallery/textdirection.PNG"class="size">
+                            <br>
+    
+
+
+   
+
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

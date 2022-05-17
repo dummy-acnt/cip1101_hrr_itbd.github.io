@@ -92,9 +92,10 @@ p{
 
 .footer a{
     text-decoration: none;
-    color:#f2f2f2;
+    color:#a2a2a2;
     text-align: center;
-    font-size: 16px;
+    font-family:'Franklin Gothic Medium';
+    font-size: 14px;
     padding: 25px 75px;
     float: left;
     margin-left: 5%;

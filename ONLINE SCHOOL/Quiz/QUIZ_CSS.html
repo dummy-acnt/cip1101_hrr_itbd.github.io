@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="newSpace">
+    <meta charset="utf-8">
+    <meta name="author" content="STUDENT, ANGELYN CABER">
+    <link rel="stylesheet" href="../design/QUIZ_CSS.css">
+<title>CSS QUIZ</title>
+
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <a href="../index.html"><img src="../gallery/icon.png"></a>
+        </div>
+        <a href="../learn/learn.html">Learn</a>
+        <a href="../exercise/exercise.html">Exercise</a>
+        <a href="QUIZ.html">Quiz</a>
+    </div>
+    <div class="nav1">
+        <a href="QUIZ_CSS.html">CSS</a><br><br><br>
+        <a href="QUIZ_PYTHON.html">Python</a><br><br><br>
+        <a href="QUIZ_JAVASCRIPT.html">JavaScript</a><br><br><br>
+        <a href="QUIZ_JAVA.html">Java</a><br><br><br>
+        <a href="QUIZ_HTML.html">HTML</a><br><br>
+        <a href="QUIZ_SearchAlgorithm.html">Search<br>Algorithm</a><br>
+        <a href="QUIZ_DataStructures.html">Data<br>Structures</a><br>
+        <a href="QUIZ_SortingTechniques.html">Sorting<br>Techniques</a><br>
+    </div>
+<div id="main">
+<div id="header">
+<h1>CSS QUIZ</h1>
+</div>
+<form id="form1">
+
+<h2>1. What does CSS stand for?</h2>
+<label for="creative"><input type="radio" name="css" value="0" id="creative" />Creative Style Sheets</label>
+<label for="colorful"><input type="radio" name="css" value="0" id="colorful" />Colorful Style Sheets</label>
+<label for="cascading"><input type="radio" name="css" value="1" id="cascading" />Cascading Style Sheets</label>
+
+<h2>2. Where in an HTML document is the correct place to refer to an external style sheet?</h2>
+<label for="head"><input type="radio" name="ess" value="1" id="head"/>In the ＜head＞ section</label>
+<label for="body"><input type="radio" name="ess" value="0" id="body"/>In the ＜body＞ section</label>
+<label for="end"><input type="radio" name="ess" value="0" id="end" />At the end of the document</label>
+
+
+<h2>3. Which HTML tag is used to define an internal style sheet?</h2>
+<label for="script"><input type="radio" name="iss" value="0" id="script" />＜script＞</label>
+<label for="css"><input type="radio" name="iss" value="0" id="css" />＜css＞</label>
+<label for="style"><input type="radio" name="iss" value="1" id="style" />＜style＞</label>
+
+
+<h2>4. How do you insert a comment in a CSS file?</h2>
+<label for="comment_1"><input type="radio" name="file" value="0" id="comment_1" />'this is a comment</label>
+<label for="comment_2"><input type="radio" name="file" value="0" id="comment_2" />//this is a comment //</label>
+<label for="comment_3"><input type="radio" name="file" value="1" id="comment_3" />/* this is a comment */</label>
+
+<h2>5. Which property is used to change the background color?</h2>
+<label for="background"><input type="radio" name="color" value="1" id="background" />background-color</label>
+<label for="bgcolor"><input type="radio" name="color" value="0" id="bgcolor" />bgcolor</label>
+<label for="color"><input type="radio" name="color" value="0" id="color" />color</label>
+
+<h2>6. Which CSS property is used to change the text color of an element?</h2>
+<label for="fgcolor"><input type="radio" name="element" value="0" id="fgcolor" />fgcolor</label>
+<label for="color1"><input type="radio" name="element" value="0" id="color1" />color</label>
+<label for="text_color"><input type="radio" name="element" value="1" id="text_color" />text-color </label>
+
+<h2>7. Which CSS property controls the text size?</h2>
+<label for="text_style"><input type="radio" name="text" value="0" id="text_style" />text-style</label>
+<label for="font_size"><input type="radio" name="text" value="1" id="font_size" />font-size</label>
+<label for="font_style"><input type="radio" name="text" value="0" id="font_style" />font-style</label>
+<label for="text_size"><input type="radio" name="text" value="0" id="text_size" />text-size</label>
+
+<h2>8. How do you make the text bold?</h2>
+<label for="bold_1"><input type="radio" name="bold" value="1" id="bold_1" />font-weight:bold;</label>
+<label for="bold_2"><input type="radio" name="bold" value="0" id="bold_2" />font:bold;</label>
+<label for="bold_3"><input type="radio" name="bold" value="0" id="bold_3" />style:bold;</label>
+
+<h2>9. Which property is used to change the left margin of an element?</h2>
+<label for="padding"><input type="radio" name="margin" value="0" id="padding" />padding-left</label>
+<label for="margin"><input type="radio" name="margin" value="1" id="margin" />margin-left</label>
+<label for="indent"><input type="radio" name="margin" value="0" id="indent" />indent</label>
+
+<h2>10. When using the padding property; are you allowed to use negative values?</h2>
+<label for="yes"><input type="radio" name="padding" value="0" id="yes" />Yes</label>
+<label for="no"><input type="radio" name="padding" value="1" id="no" />No</label>
+
+<center><button type="submit" value="Submit">Submit</button>
+<button type="reset" value="Reset">Reset</button></center><br>
+<hr width="100%" size="2" color="#282A35" align="center">
+</form>
+
+<p>Your score is: <span id="grade"> ___</span></p>
+<p id="grade2"></p>
+
+<p><a href="ANSWER_CSS.html" id="answer">View correct answers</a><br></p>
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+       css = parseInt(document.querySelector('input[name = "css"]:checked').value);
+	   ess = parseInt(document.querySelector('input[name = "ess"]:checked').value);
+	   iss = parseInt(document.querySelector('input[name = "iss"]:checked').value);
+	   file = parseInt(document.querySelector('input[name = "file"]:checked').value);
+	   color = parseInt(document.querySelector('input[name = "color"]:checked').value);
+	   element = parseInt(document.querySelector('input[name = "element"]:checked').value);
+	   text = parseInt(document.querySelector('input[name = "text"]:checked').value);
+	   bold = parseInt(document.querySelector('input[name = "bold"]:checked').value);
+	   margin = parseInt(document.querySelector('input[name = "margin"]:checked').value);
+	   padding = parseInt(document.querySelector('input[name = "padding"]:checked').value);
+
+	   result = css + ess + iss + file + color + element + text + bold + margin + padding;
+
+	document.getElementById("grade").innerHTML = result;
+
+ grading = [
+	   {score:0},
+	   {score:1}
+	   ];
+
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+	  }
+	  }
+    return false;
+}
+
+</script>
+</div>
+<div class="footer">
+    <a href="../aboutus/aboutus.html">About Us</a>
+    <a href="../contactus/contactus.html">Contact Us</a>
+    <a href="../gallery/gallery.html">Photo Gallery</a>
+    <a href="../author/authors.html">About The Author</a>
+</div>
+</body>
+</html>

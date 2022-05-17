@@ -1,0 +1,173 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+        body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+     </style>
+     <div class="sidebar" >
+      <a href="landing.html"><strong>JAVA INTRODUCTION</strong></a>
+      <a class="active" href="datatypes.html"><strong>DATA TYPES</strong></a>
+      <a href="string.html"><strong>STRING</strong></a>
+      <a href="Boolean.html"><strong>BOOLEAN</strong></a>
+      <a href="conditionals.html"><strong>CONDITION</strong></a>
+      <a href="ifstatement.html"><strong>IF STATEMENT</strong></a>
+      <a href="looping.html"><strong>LOOPING</strong></a>
+      <a href="arrays.html"><strong>ARRAYS</strong></a>
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">PRIMITIVE DATA TYPES?</h1> <br>
+    <br>
+    <img class="fluid"src="https://pbs.twimg.com/media/ENXemH-WwAA8Abb.jpg" title="Int data type" alt="PICTURE OF INT DATA TYPE"><br>
+    <p class="text-left">
+        The eight primitives defined in Java are int, byte, short, long, float, double, boolean and char. These aren't considered objects and represent raw values. They're stored directly on the stack (check out this article for more information about memory management in Java).
+    </p>
+    <br><br>
+    <h3><li>boolean</li></h3>
+    <p>a Java expression that returns a Boolean value: true or false.</p>
+    <h1 class="text-center">NUMERIC DATA TYPES</h1>
+    <h3><li>Integral Type</li></h3>
+    <ul>
+        <li><a href="#int" class="li">int</a></li>
+        <li><a href="#byte" class="li">byte</a></li>
+        <li><a href="#short" class="li">short</a></li>
+        <li><a href="#long" class="li">long</a></li>
+        <li><a href="#char" class="li">char</a></li>
+    </ul>
+    <h3><li>Floating-Point Type</li></h3>
+    <ul>
+      <li><a href="#float" class="li">float</a></li>
+      <li><a href="#double" class="li">double</a></li>
+    </ul>
+    <h2 class="text-center" id="int">int</h2><br>
+    <img class="fluid"src="https://www.homeandlearn.co.uk/java/images/variables/code_first_number.gif" title="Int data type" alt="PICTURE OF INT DATA TYPE"><br>
+    <p>It is used to declare variables. It can also be used with methods to return integer type values. It can hold a 32-bit signed two's complement integer.</p><br><br>
+
+    <h2 class="text-center" id="byte">byte</h2><br>
+    <img class="fluid"src="https://xenovation.com/images/articles/development/java/DataTypes/java-byte.png" title="byte data type" alt="PICTURE OF INT BYTE TYPE"><br>
+    <p>The byte data type is an 8-bit signed two's complement integer. It has a minimum value of -128 and a maximum value of 127 (inclusive). The byte data type can be useful for saving memory in large arrays, where the memory savings actually matters.</p><br><br>
+
+    <h2 class="text-center" id="short">short</h2><br>
+    <img class="fluid"src="https://4.bp.blogspot.com/-51wg6-wC6Wg/Ula-57TdvtI/AAAAAAAAAE8/sqaH6GyU62I/s640/most+java+developers+puzzled.jpg" title="short data type" alt="PICTURE OF SHORT DATA TYPE"><br>
+    <p>The short data type is a 16-bit signed two's complement integer. It has a minimum value of -32,768 and a maximum value of 32,767 (inclusive). As with byte , the same guidelines apply: you can use a short to save memory in large arrays, in situations where the memory savings actually matters.</p><br><br>
+
+    <h2 class="text-center" id="long">long</h2><br>
+    <img class="fluid"src="https://beginnersbook.com/wp-content/uploads/2013/12/java_string_to_long.jpg" title="long data type" alt="PICTURE OF LONG DATA TYPE"><br>
+    <p>The long data type is a 64-bit two's complement integer. The signed long has a minimum value of -263 and a maximum value of 263-1. In Java SE 8 and later, you can use the long data type to represent an unsigned 64-bit long, which has a minimum value of 0 and a maximum value of 264-1.</p><br><br>
+
+    <h2 class="text-center" id="char">char</h2><br>
+    <img class="fluid"src="https://beginnersbook.com/wp-content/uploads/2019/04/Java_char_to_string_example.jpg" title="char data type" alt="PICTURE OF CHAR DATA TYPE"><br>
+    <p>The char keyword is a data type that is used to store a single character. A char value must be surrounded by single quotes, like 'A' or 'c'.</p><br><br>
+    
+    <h2 class="text-center" id="float">float</h2><br>
+    <img class="fluid"src="https://www.homeandlearn.co.uk/java/images/variables/addition_code_float.gif" title="float data type" alt="PICTURE OF DOUBLE DATA TYPE"><br>
+    <p>It is a single-precision 32-bit IEEE 754 floating point. It is used to declare the variables and methods. It represents the fractional numbers.</p><br><br>
+    
+    <h2 class="text-center" id="double">double</h2><br>
+    <img class="fluid"src="https://www.homeandlearn.co.uk/java/images/variables/addition_code_double.gif" title="double data type" alt="PICTURE OF DOUBLE DATA TYPE"><br>
+    <p>Java double is used to represent floating-point numbers. It uses 64 bits to store a variable value and has a range greater than float type. Syntax: // square root variable is declared with a double type.</p><br><br>
+    
+
+    </div>
+</div>
+<br><br>
+  </body>

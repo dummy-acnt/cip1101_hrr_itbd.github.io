@@ -1,0 +1,185 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+        body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.fluid{
+  width: 450px;
+  height: 250px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+     </style>
+     <div class="sidebar" >
+        <a href="landing.html"><strong>JAVA INTRODUCTION</strong></a>
+        <a href="datatypes.html"><strong>DATA TYPES</strong></a>
+        <a href="string.html"><strong>STRING</strong></a>
+        <a href="Boolean.html"><strong>BOOLEAN</strong></a>
+        <a class="active" href="conditionals.html"><strong>CONDITION</strong></a>
+        <a href="ifstatement.html"><strong>IF STATEMENTS</strong></a>
+        <a href="looping.html"><strong>LOOPING</strong></a>
+        <a href="arrays.html"><strong>ARRAYS</strong></a>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">CONDITIONALs</h1> <br>
+    <br>
+    <p>Java, like all other programming languages, is equipped with specific statements that allow us to check a condition and execute certain parts of code depending on whether the condition is true or false. Such statements are called conditional, and are a form of composite statement.</p>
+    <p class="text-left">
+        Conditional statements are those statements where a hypothesis is followed by a conclusion. It is also known as an " If-then" statement. If the hypothesis is true and the conclusion is false, then the conditional statement is false. Likewise, if the hypothesis is false the whole statement is false.  
+        </p><br><br><br>
+    <h2>Java Conditions</h2>
+    <p>Java supports the usual logical conditions from mathematics:
+    </p>
+        <li><a href="#lessthan" class="li">Less than: <kbd>a &lt; b</kbd></a></li>
+        <li><a href="#lessthanequal" class="li">Less than or equal to:<kbd>a &lt;= b</kbd></a></li>
+        <li><a href="#greaterthan" class="li">Greater than:<kbd> a &gt; b</kbd></a></li>
+        <li><a href="#greaterthanequal" class="li">Greater than or equal to: <kbd>a &gt;= b</kbd></a></li>
+        <li><a href="#equal" class="li">Equal to: <kbd>a == b</kbd></a></li>
+        <li><a href="#notequal" class="li">Not Equal to: <kbd>a != b</kbd></a></li>
+
+
+    <h2 class="text-center" id="lessthan">LESS THAN</h2><br>
+    <img class="fluid"src="image/lessthan.png" title="True boolean" alt="PICTURE OF TRUE BOOLEAN"><br>
+    <p>The less-than operator, <kbd>&lt;</kbd>, takes two values and evaluates to true if the first is less than the second. So for example, the expression <kbd>(num1 &lt; 1)</kbd></10> evaluates to the value false if num1 is less than 1, and true otherwise.</p><br><br>
+
+    <h2 class="text-center" id="lessthanequal">LESS THAN OR EQUAL</h2><br>
+    <img class="fluid"src="image/lessthanequal.png" title="False Boolean" alt="PICTURE OF FALSE BOOLEAN"><br><br>
+    <p>Checks if the value of left operand is less than or equal to the value of right operand, if yes then condition becomes true. <kbd>(num1 &lt;= 1)</kbd> is true.</p><br><br>
+
+    <h2 class="text-center" id="greaterthan">GREATER THAN</h2><br>
+    <img class="fluid"src="image/greaterthan.png" title="False Boolean" alt="PICTURE OF FALSE BOOLEAN"><br><br>
+    <p> Greater Than To Relational Operator is used to check if first operand is greater than to the second operand. In this tutorial, we will learn how to use the Greater Than To Operator in Java, with examples. The symbols used for Greater Than To operator is <kbd>></kbd>.</p><br><br>
+
+    <h2 class="text-center" id="greaterthanequal">GREATER THAN OR EQUAL</h2><br>
+    <img class="fluid"src="image/greaterthanequal.png" title="False Boolean" alt="PICTURE OF FALSE BOOLEAN"><br><br>
+    <p> Greater Than or Equal To Relational Operator is used to check if first operand is greater than or equal to the second operand. In this tutorial, we will learn how to use the Greater Than or Equal To Operator in Java, with examples. The symbols used for Greater Than or Equal To operator is <kbd>>=</kbd> .</p><br><br>
+
+    <h2 class="text-center" id="equal">EQUAL</h2><br>
+    <img class="fluid"src="image/equal.png" title="False Boolean" alt="PICTURE OF FALSE BOOLEAN"><br><br>
+    <p>The <kbd>==</kbd> method compares two strings, and returns true if the strings are equal, and false if not.</p><br><br>
+
+    <h2 class="text-center" id="notequal">NOT EQUAL</h2><br>
+    <img class="fluid"src="image/notequal.png" title="False Boolean" alt="PICTURE OF FALSE BOOLEAN"><br><br>
+    <p>The symbols used for Not Equal operator is != . Not Equal operator takes two operands: left operand and right operand as shown in the following. The operator returns a boolean value of true if x is not equal to y , or false if not.</p><br><br>
+        
+    <h5 class="text-left">example:</h5><br>
+    <blockquote>int time = 22;<br>
+        if (time < 10) {<br>
+          System.out.println("Good morning.");<br>
+        } else if (time < 20) {<br>
+          System.out.println("Good day.");<br>
+        } else {<br>
+          System.out.println("Good evening.");<br>
+        }<br>
+        // Outputs "Good evening."<br>
+    </blockquote>
+    <h5 class="text-left"><a href="https://www.w3schools.com/java/tryjava.asp?filename=demo_if_else_if" class="example">Try it Yourself >> </a></h5><br>
+    <br><br>
+    </div>
+</div>
+<br><br>
+
+
+  </body>

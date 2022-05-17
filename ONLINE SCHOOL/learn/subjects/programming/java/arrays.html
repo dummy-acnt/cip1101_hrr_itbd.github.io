@@ -1,0 +1,209 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+     </style>
+     <div class="sidebar" >
+        <a href="landing.html"><strong>JAVA INTRODUCTION</strong></a>
+        <a href="datatypes.html"><strong>DATA TYPES</strong></a>
+        <a href="string.html"><strong>STRING</strong></a>
+        <a href="Boolean.html"><strong>BOOLEAN</strong></a>
+        <a href="conditionals.html"><strong>CONDITION</strong></a>
+        <a href="ifstatement.html"><strong>IF STATEMENTS</strong></a>
+        <a href="looping.html"><strong>LOOPING</strong></a>
+        <a class="active" href="arrays.html"><strong>ARRAYS</strong></a>
+
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">JAVA ARRAYS</h1> <br>
+    <br>
+    <p>
+        Java array is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a contiguous memory location. It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array. 
+    </p>
+    <img class="fluid"src="https://javatutorial.net/wp-content/uploads/2015/01/java_array.jpg" title="ARRAYS" alt="PICTURE OF ARRAYS"><br>
+    <br><br><br>
+    <p>An array is a collection of similar types of data.</p>
+    <p>For example, if we want to store the names of 100 people then we can create an array of the string type that can store 100 names.</p>
+    <blockquote>
+        
+        &nbsp;&nbsp;String[] array = new String[100];
+        
+    </blockquote>
+    <p>Here, the above array cannot store more than 100 names. The number of values in a Java array is always fixed.
+
+    </p>
+      <br><br><hr><br>
+    <h4 id="declare">How to declare an array in Java?</h4>
+        <p>In Java, here is how we can declare an array.</p>
+        <blockquote>
+            &nbsp;&nbsp;&nbspdataType[] arrayName;
+        </blockquote>
+        <ul>
+            <li><kbd>dataType</kbd> - it can be <stron>primitive data types</stron> like <kbd>int</kbd>, <kbd>char</kbd>, <kbd>double</kbd>, <kbd>byte</kbd>, etc. or <strong>Java objects</strong></li><br>
+            <li><kbd>arrayName</kbd> - it is an <strong>identifier</strong></li><br>
+        </ul>
+        <h3>for example:</h3><br>
+        <blockquote>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double[] data;
+        </blockquote>
+        <p>Here, data is an array that can hold values of type double.</p>
+        <strong>But, how many elements can array this hold?</strong><br><br>
+        <p>Good question! To define the number of elements that an array can hold, we have to allocate memory for the array in Java. For example,</p><br>
+        <blockquote>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // declare an array<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; double[] data;<br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // allocate memory<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    data = new double[10];<br>
+        </blockquote><br>
+        <p>Here, the array can store <strong>10</strong> elements. We can also say that the <strong>size or length</strong> of the array is <strong>10</strong>.</p><br>
+        <p>In Java, we can declare and allocate the memory of an array in one single statement. For example,</p>
+        <br><br><hr><br>
+    <h4>How to Initialize Arrays in Java?</h4>
+    <p>In Java, we can initialize arrays during declaration. For example,</p><br>
+    <blockquote>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//declare and initialize and array<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] age = {12, 4, 5, 2, 5};<br>
+    </blockquote>
+    <br>
+    <p>Here, we have created an array named age and initialized it with the values inside the curly brackets.</p>
+    <p>Note that we have not provided the size of the array. In this case, the Java compiler automatically specifies the size by counting the number of elements in the array (i.e. 5).</p>
+    <p>In the Java array, each memory location is associated with a number. The number is known as an array index. We can also initialize arrays in Java, using the index number. For example,</p>
+    <blockquote>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // declare an array<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;int[] age = new int[5];<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   // initialize array<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age[0] = 12;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age[1] = 4;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;age[2] = 5;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;..<br>
+    </blockquote><br>
+    <blockquote><br>
+    <img class="fluid"src="https://cdn.programiz.com/sites/tutorial2program/files/initialize-array-during-declaration-java.jpg" title="ARRAYS" alt="PICTURE OF ARRAYS"><br>
+    <p class="highlights">&nbsp;&nbsp;Note:</p>
+    <li class="highlights">Array indices always start from 0. That is, the first element of an array is at index 0.</li><br>
+    <li class="highlights">If the size of an array is <kbd>n</kbd>, then the last element of the array will be at index <kbd>n-1</kbd>.</li><br>
+    </blockquote>
+    <br><br><hr><br><br>
+    <h4>How to Access Elements of an Array in Java?</h4><br>
+    <p>We can access the element of an array using the index number. Here is the syntax for accessing elements of an array,</p><br>
+    <blockquote>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // access array elements<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; array[index]<br>
+    </blockquote><br>
+    <p>Let's see an example of accessing array elements using index numbers.</p>
+
+    <h5>Example: Access Array Elements</h5><br>
+    <img class="fluid"src="image/input.png" title="ARRAYS" alt="PICTURE OF ARRAYS"><br><br>
+    <h5>Output:</h5><br>
+    <img class="fluid"src="image/output.png" title="ARRAYS" alt="PICTURE OF ARRAYS"><br>
+    <h5 class="text-left"><a href="https://www.w3schools.com/java/tryjava.asp?filename=demo_array_change" class="example">Try it Yourself >> </a></h5><br>
+    <br><br><br>
+
+   
+</div>
+<br><br>
+  </body>

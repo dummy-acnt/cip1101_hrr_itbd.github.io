@@ -1,0 +1,207 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+    <title>HTML ELEMENTS</title>
+  </head>
+  <style>
+    body{
+        background-color: #282a35;
+        color: #f2f2f2;
+        font-family: "Tahoma";
+        width: 100%;
+        
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .size{
+    width:65%;
+     display:block;
+     margin-left: auto;
+     margin-right: auto;
+     
+     }
+     @media only screen and (max-width: 480px) {
+  .size{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin-top: 7%;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin: 0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 230px;
+  padding: 1px 16px;
+ 
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.table-responsive{
+    width: 30%;
+    margin-left:220px;
+}
+
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+    
+         
+     </style>
+     <div class="nav">
+      <div>
+          <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+      </div>
+      <a href="../../../learn.html">Learn</a>
+      <a href="../../../../exercise/exercise.html">Exercise</a>
+      <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+  </div>
+     <div class="sidebar" >
+      <a  href="prject.html"><b>HTML INTRODUCTION</b></a>
+      <a  href="htmlAttributes.html"><strong>HTML ATTRIBUTE</strong></a>
+      <a  href="elements.html"><strong>HTML ELEMENTS</strong></a>
+      <a href="styles.html">HTML TEXT FORMAT</a>
+      <a  href="Heading.html">HTML HEADINGS</a>
+      <a  href="entities.html"><b>HTML Character Entities</b></a>
+      <a   href="List.html"><b>HTML LIST</b></a>
+      <a class="active" href="media.html"><b>HTML IMAGE</b></a>
+    
+    </div>
+     
+
+     
+ </style>
+ <br>
+ 
+  <div class="content">
+  <h1 class="text-center">HTML IMAGE</h1><br>
+  <h3 class="text-danger">Adding Image</h3>
+  <br><br>
+  <ul>
+	<li> Use the <mark>&lt;/img&gt;</mark> element to insert an image into the page.</li>
+	<li> This is a placeholder element (which means there is no closing tag).</li>
+	<li>It must have the following attributes:<b> height, width, src, alt, title.</b></li>
+
+</ul><br>
+<p><blockquote>The <mark>SRC</mark> element allows you to specify the image's URL (Uniform Resource Locator). This reference might be absolute or relative.</blockquote></p>
+<p><blockquote>The <mark>height and width</mark> attributes are used to indicate the size of the image.
+</blockquote></p>
+<p><blockquote>The <mark>alt</mark> attribute gives you an opportunity to specify alternate text describing the image. 
+    Alternate text information is used when the user has images turned off and by screen-readers</blockquote></p>
+<p><blockquote>the <mark>title</mark> attribute with the &lt;img /&gt; element to provide additional information about the image</blockquote></p>
+<br>
+<div class="table-responsive">
+      <table class="table">
+        <thead>
+            <tr>
+       
+              <th scope="col" class="text-center text-light bg-danger ">IMAGE FORMAT</th>
+             
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <td class="table-secondary text-dark text-center p-3"><b>PNG</b></td>
+            <tr>
+                <td class="table-secondary text-dark text-center p-3"><b>JPG/PEG</b></td>
+            </tr>
+            <tr>
+                <td class="table-secondary text-dark text-center p-3"><b>GIF</b></td>
+            </tr></table>
+              <br>
+            </div>
+           
+            <p><b>Example: </b></p><br>
+              <img src="../../../../gallery/image.PNG" class="size" alt="Recto Entrance in University of the east" title="UE Recto Entrance">
+              <b>Output:</b><br>
+              <img src="../../../../gallery/universityOfTheEast.jpg" class="size" alt="Recto Entrance in University of the east" title="UE Recto Entrance"><br>
+<hr><br>
+  </div>
+</html>

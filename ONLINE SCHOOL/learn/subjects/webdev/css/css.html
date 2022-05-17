@@ -1,0 +1,202 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--TAUP, NORSIMA-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+  </head>
+    <style>
+      body{
+      background-color: #282a35;
+      color: #f2f2f2;
+      font-family: "Tahoma";
+      width:auto;
+             
+      }
+      h1{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .size{
+      width:  45%;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      @media only screen and (max-width: 480px) {
+      .size {
+      width: 100%;
+      }
+      }
+      
+      /* The side navigation menu */
+      .sidebar {
+      margin-top: 7%;
+      padding: 0;
+      width:fit-content;
+      position: fixed;
+      height:100%;
+      overflow: auto;
+      background-color: #f2f2f2;
+      }
+      
+      
+      .sidebar a {
+        display: block;
+        color:  #1E1E1E;
+        padding: 16px;
+        text-decoration: none;
+        margin:0;
+        line-height:50px;
+      }
+      
+      /* Active/current link */
+      .sidebar a.active {
+        background-color: red;
+        color: white;
+        margin: 0;
+      }
+      
+      
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+      
+      div.content {
+        margin-left: 250px;
+        padding: 1px 16px;
+       
+      }
+      
+      
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+      }
+      
+      
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          display: inline-block;
+          font-size: 8px;
+        }
+      }
+      .nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+     </style>
+<div class="nav">
+  <div>
+      <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+  </div>
+  <a href="../../../learn.html">Learn</a>
+  <a href="../../../../exercise/exercise.html">Exercise</a>
+  <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+</div>
+<title>CSS INTRODUCTION</title>
+
+     <div class="sidebar" >
+        <a class="active" href="css.html"><b>CSS INTRODUCTION</b></a>
+        <a href="selctors.html"><b>CSS SELECTORS</b></a>
+        <a href="cssBackground.html"><strong>CSS BACKGROUND</strong></a>
+        <a href="cssTextFormat.html"><b>CSS TEXT FORMAT</b></a>
+        <a href="cssBorders.html"><b>CSS BORDERS</b></a>
+        <a href="cssFonts.html"><b>CSS FONTS</b></a>
+        <a href="cssComments.html"><b>CSS COMMENTS</b></a>
+         <a href="margin&padding.html"><b>CSS MARGIN & PADDING</b></a>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center text-danger">What is CSS?</h1> <br>
+    <br>
+    <p class="text-center">CSS (Cascading Style Sheets) is a stylesheet language for creating appealing webpages. The goal is to make the process of creating web pages attractive as simple as possible. You may use it to style web pages. More crucially, it allows you to do it without having to worry about the HTML that each web page contains.</p>
+    <br><br><br>
+    <h3>Three types of css:</h3>
+    <li>Inline</li>
+    <li>Internal or Embeded</li>
+    <li>External</li><br>
+    <h5 class="text-center text-danger"><b><u>INTERNAL CSS STYLE</b></u></h5>
+        <br>
+        <img src="../../../../gallery/format.PNG" class="size"   title="HTML BASIC FORMAT USING INTERNAL CSS" alt="PICTURE OF HTML BASIC FORMAT USINNG INTERNAL CSS">
+        <br>
+        <h5 class="text-center text-danger"><b><u>INLINE CSS STYLE</u></b></h5>
+        <br>
+        <img src="../../../../gallery/inline sample.PNG"  class="size" title="HTML BASIC FORMAT USING INLINE CSS" alt="PICTURE OF HTML BASIC FORMAT USINNG INLINE CSS">
+        <br>
+        <h5 class="text-center text-danger"><b><u>EXTERNAL CSS STYLE</u></b></h5>
+        <br>
+        <p>Note: external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. </p>
+        <img src="../../../../gallery/external.PNG" class="size" title="HTML BASIC FORMAT USING INTERNAL CSS" alt="PICTURE OF HTML BASIC FORMAT USINNG INTERNAL CSS">
+        <br><br>
+        <p><b><br>CSS SYNTAX</b><br><br>A CSS file contains style rules that the browser interprets and then applies to the components in your document.
+            A selector and declaration block make up a style rule set.</p>
+            <br>
+            <img src="../../../../gallery/cssSyntax.PNG" class="size">
+        <br>
+        <ul>
+            <li>The selector identifies the HTML element to be styled.</li>
+            <li>One or more declarations are separated by semicolons in the declaration block.</li>
+            <li>A semicolon always terminates a CSS declaration, and declaration blocks are enclosed by curly braces.</li>
+            <li>A colon separates the CSS property name and value in each declaration.<br>
+
+                For example:<br>
+                
+                –; property is color, and value is red.<br>
+                
+                –; value is 15px, and property is font-size.</li>
+        </ul>
+     <p><b>Example:</b> example of HTML webpage with CSS styles. Here, we use styles to set the alignment and text color of a webpage.</p>
+     <img src="../../../../gallery/example1.PNG" class="size" title="EXAMPLE HTML BASIC USING INLINE CSS" alt="PICTURE OF EXAMPLE HTML BASIC FORMAT STRUCTURE">
+    <br>
+    <p><strong>Output:</strong></p>
+    <img src="../../../../gallery/output11.PNG" class="size" title="OUTPUT HTML BASIC FORMAT STRUCTURE" alt="PICTURE OF OUTPUT HTML BASIC FORMAT STRUCTURE">
+
+
+
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

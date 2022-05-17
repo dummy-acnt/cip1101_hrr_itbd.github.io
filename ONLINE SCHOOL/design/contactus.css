@@ -23,40 +23,90 @@
     float: left;
 }
 
+.box{
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color:#282A35;
+    border-radius: 6px;
+}
+
+.info{  
+    width: 230px;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.box h1{
+    color: #f2f2f2;
+    font-family: Arial;
+}
+
+.info h3{
+    color: #EB3F3F;
+    font-family: Tahoma;
+}
+
+.info h5{
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #d1d1d1;
+}
+
 fieldset{
     border: solid 1px rgb(83, 83, 83);
     border-radius: 6px;
-    width: 680px;
+    width: 400px;
+    margin: auto;
+    border: none;
 }
 
-hr{
-    border: 1px solid #6c6c6c;
-    width: 80%;
+label{
+    display: block;
+    font-size: 1em;
+    font-family: Tahoma;
+    color:#f2f2f2;
+    padding: 5px 10px;
 }
 
-.contact{
-    background-color: #282a35;
-    height: 500px;
-    
+input[type="text"]{
+    height: 30px;
+    width: 390px;
 }
 
-.contact h1{
-    font-family: Arial;
-    font-size: 2em;
+textarea{
+    height: 90px;
+    width: 390px;
+}
+
+input[type="submit"]{
+    height: 30px;
+    width: 390px;
+    background-color: #EB3F3F;
     color: #f2f2f2;
+    margin-top: 2%;
+    border: none;
+}
+
+.box img{
+    height:450px;
+    max-width:100%;
 }
 
 .footer{
     width: 100%;
-    height:80px;
+    height:70px;
     background-color:#191b22;
 }
 
 .footer a{
     text-decoration: none;
-    color:#f2f2f2;
+    color:#a2a2a2;
     text-align: center;
-    font-size: 16px;
+    font-family:'Franklin Gothic Medium';
+    font-size: 14px;
     padding: 25px 75px;
     float: left;
     margin-left: 5%;

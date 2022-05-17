@@ -1,21 +1,58 @@
 <html>
     <head>
-        <style>
-            img{
-                height: 300px;
-                max-width: 100%;
-            }
-
-            button{
-                color: #eb3f3f;
-            }
-        </style>
+        <meta charset="utf-8">
+        <meta name="author" content="Rachel Ritz M. Hontiveros">
+        <link rel="stylesheet" href="../design/contactus.css">
     </head>
     <body>
-        <div align="center">
-            <img src="../gallery/dev.png">
-            <h1>This page is under Development</h1>
-            <a href="../index.html"><button>Go back home</button></a> 
+        <div class="nav">
+            <div>
+                <a href="../index.html"><img src="../gallery/icon.png"></a>
+            </div>
+            <a href="../learn/learn.html">Learn</a>
+            <a href="../exercise/exercise.html">Exercise</a>
+            <a href="../quiz/quiz.html">Quiz</a>
+        </div>
+
+        <div class="box">
+            <div class="info">
+                <h1>Contact Info</h1>
+                <h3>Email</h3>
+                <h5>samplegroupemail@yahoo.com</h5>
+                <h3>Phone</h3>
+                <h5>091234567890</h5>
+                <h3>Address</h3>
+                <h5>1234 Anywhere St.Tondo Manila</h5>
+            </div>
+            <div class="contact">
+                <form>
+                    <fieldset>
+                        <h1>Contact Us</h1>
+
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email">
+
+                        <label for="number">Phone Number</label>
+                        <input type="text" name="number" id="number">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="5" rows="5"></textarea>
+
+                        <input type="submit" value="submit">
+                    </fieldset>
+                </form>
+            </div>
+            <img src="../gallery/team.png">
+        </div>
+        
+        <div class="footer">
+            <a href="../aboutus/aboutus.html">About Us</a>
+            <a href="../contactus/contactus.html">Contact Us</a>
+            <a href="../gallery/gallery.html">Photo Gallery</a>
+            <a href="../author/authors.html">About The Author</a>
         </div>
     </body>
 </html>

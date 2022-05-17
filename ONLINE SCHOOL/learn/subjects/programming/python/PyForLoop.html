@@ -1,0 +1,244 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>PYTHON FOR LOOPS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:100%
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+      img{
+        max-width: 100%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        @media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin: 0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 230px;
+  padding: 1px 16px;
+  
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+img{
+  width: 1000px;
+}
+
+     </style>
+     <div class="sidebar" >
+        <a class="active" href="prject.html"><b>PYTHON INTRODUCTION</b></a>
+        <a href="PyGetStarted.html"><strong>PYTHON GET STARTED</strong></a>
+        <a href="PySyntax.html"><strong>PYTHON SYNTAX</strong></a>
+        <a href="PyComments.html"><b>PYTHON COMMENTS</b></a>
+        <a href="PyVariables.html"><b>PYTHON VARIABLES</b></a>
+        <a href="PyDataTypes.html"><b>PYTHON DATA TYPES</b></a>
+        <a href="PyIfElse.html"><b>PYTHON IF ELSE</b></a>
+        <a href="PyWhileLoop.html"><b>PYTHON WHILE LOOP</b></a>
+        <a href="PyForLoop.html"><b>PYTHON FOR LOOP</b></a>
+      
+      </div>
+<div class="content">
+      <h1 class="text-center">Python For Loops</h1> 
+
+      <h3 class="text-danger mt-5">Python For Loops</h3>
+
+      <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+      <p>This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+      <p>With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+
+      <img src="IMAGE/38.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output38.png" title="Syntax" alt="Picture of syntax">
+
+      <p>The for loop does not require an indexing variable to set beforehand.</p>
+
+      <h3 class="text-danger mt-5">Looping Through a String</h3>
+
+      <p>Even strings are iterable objects, they contain a sequence of characters:</p>
+
+      <img src="IMAGE/39.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output39.png" title="Syntax" alt="Picture of syntax">
+
+      <h3 class="text-danger mt-5">The break Statement</h3>
+
+      <p>With the break statement we can stop the loop before it has looped through all the items:</p>
+
+      <img src="IMAGE/40.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output40.png" title="Syntax" alt="Picture of syntax">
+
+      <br>
+
+      <img src="IMAGE/41.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output41.png" title="Syntax" alt="Picture of syntax">
+
+      <h3 class="text-danger mt-5">The continue Statement</h3>
+
+      <p>With the continue statement we can stop the current iteration of the loop, and continue with the next:</p>
+
+      <img src="IMAGE/42.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output42.png" title="Syntax" alt="Picture of syntax">
+
+      <h3 class="text-danger mt-5">The range() Function</h3>
+
+      <p>To loop through a set of code a specified number of times, we can use the range() function,</p>
+
+      <p>The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</p>
+
+      <img src="IMAGE/43.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output43.png" title="Syntax" alt="Picture of syntax">
+
+      <p>Note that range(6) is not the values of 0 to 6, but the values 0 to 5.</p>
+
+      <p>The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: range(2, 6), which means values from 2 to 6 (but not including 6):</p>
+
+
+      <img src="IMAGE/44.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output44.png" title="Syntax" alt="Picture of syntax">
+
+      <p>The range() function defaults to increment the sequence by 1, however it is possible to specify the increment value by adding a third parameter: range(2, 30, 3):</p>
+
+      <img src="IMAGE/45.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output45.png" title="Syntax" alt="Picture of syntax">
+
+      <h3 class="text-danger mt-5">Else in For Loop</h3>
+
+      <p>The else keyword in a for loop specifies a block of code to be executed when the loop is finished:</p>
+
+      <img src="IMAGE/46.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output46.png" title="Syntax" alt="Picture of syntax">
+
+      <p>Note: The else block will NOT be executed if the loop is stopped by a break statement.</p>
+
+      <img src="IMAGE/47.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output47.png" title="Syntax" alt="Picture of syntax">
+
+      <h3 class="text-danger mt-5">Nested Loops</h3>
+
+      <p>A nested loop is a loop inside a loop.</p>
+      <p>The "inner loop" will be executed one time for each iteration of the "outer loop":</p>
+
+      <img src="IMAGE/48.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output48.png" title="Syntax" alt="Picture of syntax">
+
+      <h3 class="text-danger mt-5">The pass Statement</h3>
+
+      <p>for loops cannot be empty, but if you for some reason have a for loop with no content, put in the pass statement to avoid getting an error.</p>
+
+      <img src="IMAGE/49.png" title="Syntax" alt="Picture of syntax">
+
+      <h4 class="text-danger mt-5">Output:</h4>
+
+      <img src="IMAGE/output49.png" title="Syntax" alt="Picture of syntax">
+
+
+
+      
+    </div>
+    <br>
+  
+</html>

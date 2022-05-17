@@ -1,0 +1,212 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+     </style>
+     <div class="sidebar" >
+        <a href="landing.html"><strong>JAVA INTRODUCTION</strong></a>
+        <a href="datatypes.html"><strong>DATA TYPES</strong></a>
+        <a href="string.html"><strong>STRING</strong></a>
+        <a href="Boolean.html"><strong>BOOLEAN</strong></a>
+        <a href="conditionals.html"><strong>CONDITION</strong></a>
+        <a href="ifstatement.html"><strong>IF STATEMENTS</strong></a>
+        <a class="active" href="looping.html"><strong>LOOPING</strong></a>
+        <a href="arrays.html"><strong>ARRAYS</strong></a>
+
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">LOOPING</h1> <br>
+    <br>
+    <p>
+        The Java if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.
+    </p>
+    <img class="img-fluid"src="https://cdn.programiz.com/sites/tutorial2program/files/java-for-loop.png" title="True boolean" alt="PICTURE OF TRUE BOOLEAN"><br>
+    <p>In this tutorial, we will learn how to use for loop in Java with the help of examples and we will also learn about the working of Loop in computer programming.<br>
+        In computer programming, loops are used to repeat a block of code. For example, if you want to show a message 100 times, then rather than typing the same code 100 times, you can use a loop.
+        
+        </p>
+      <br><br><br>
+    <h2>In Java, there are three types of loops.</h2><br>
+        <li><a href="#for" class="li"><kbd>for loop</kbd></a></li><br>
+        <li><a href="#while" class="li"><kbd>while loop</kbd></a></li><br>
+        <li><a href="#do" class="li"><kbd>do while loop</kbd></a></li><br>
+        <br><br><br>
+    <h2 class="text-center" id="if">FOR LOOP</h2><br>
+    <p>Java for loop is used to run a block of code for a certain number of times. The syntax of <kbd>for</kbd> loop is:</p>
+    <blockquote>
+        for(initialExpression; testExpression; updateExpression) {<br>
+            // body of the loop<br>
+        }
+    </blockquote>
+    <ol>
+        <li>The <strong class="info">initialExpression</strong> initializes and/or declares variables and executes only once.</li><br>
+        <li>The <strong class="info">condition</strong> is evaluated. If the <strong class="info">condition</strong> is <kbd>true</kbd>, the body of the <kbd>for</kbd> loop is executed.</li><br>
+        <li>The <strong class="info">updateExpression</strong> updates the value of <strong class="info">initialExpression</strong>.</li><br>
+        <li>The <strong class="info">condition</strong> is evaluated again. The process continues until the <strong class="info">condition</strong> is false.</li><br>
+    </ol>
+    <h3 class="text-left">example:</h3>
+    <img class="img-fluid"src="https://appdividend.com/wp-content/uploads/2019/07/Java-For-Loop-Example-For-Loop-in-Java-Tutorial.png" title="FOR LOOP" alt="PICTURE OF FOR LOOP"><br><br>
+    <br>
+    <h5 class="text-left">example:</h5><br>
+    <blockquote>for (int i = 0; i <= 10; i = i + 2) {<br>
+        System.out.println(i);<br>
+      }<br>
+    </blockquote>
+    <br>
+    <h5 class="text-left"><a href="https://www.w3schools.com/java/tryjava.asp?filename=demo_for_loop_even" class="example">Try it Yourself >> </a></h5><br>
+    <br><br><br><br>
+
+    <h2 class="text-center" id="WHILE">WHILE LOOP</h2><br>
+    <p>Java while loop is used to run a specific code until a certain condition is met. The syntax of the while loop is:
+    <blockquote>
+        while (testExpression) {<br>
+            // body of loop<br>
+        }<br>
+    </blockquote>
+    <ol>
+        <li>A <kbd>while</kbd> loop evaluates the <strong class="info">textExpression</strong> inside the parenthesis <kbd>()</kbd>.</li><br>
+        <li>If the <strong class="info">textExpression</strong> evaluates to <kbd>true</kbd>, the code inside the <kbd>while</kbd> loop is executed.</li><br>
+        <li>The <strong class="info">textExpression</strong> is evaluated again.</li><br>
+        <li>This process continues until the <strong class="info">textExpression</strong>is false.</li><br>
+        <li>When the <strong class="info">textExpression</strong> evaluates to <kbd>false</kbd>, the loop stops.</li><br>
+    </ol>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/07/Java-While-Loop-Example-While-Loop-In-Java.png" title="WHILE LOOP" alt="PICTURE OF WHILE LOOP"><br><br>
+    </p>
+    <br><br>
+
+    <h2 class="text-center" id="DO">DO WHILE LOOP</h2><br>
+    <p>The do...while loop is similar to while loop. However, the body of do...while loop is executed once before the test expression is checked. For example,</p>
+    <blockquote>
+        do {<br>
+            // body of loop<br>
+        } while(textExpression);<br>
+    </blockquote>
+    <ol>
+        <li>The body of the loop is executed at first. Then the <strong class="info">textExpression</strong> is evaluated.</li><br>
+        <li>If the <strong class="info">textExpression</strong> evaluates to <kbd>true</kbd>, the body of the loop inside the <kbd>do</kbd> statement is executed again.</li><br>
+        <li>The textExpression is evaluated once again.</li><br>
+        <li>f the <strong class="info">textExpression</strong> evaluates to <kbd>true</kbd>, the body of the loop inside the <kbd>do</kbd> statement is executed again.</li><br>
+        <li>This process continues until the <strong class="info">textExpression</strong> evaluates to <kbd>false</kbd>. Then the loop stops.
+        </li><br>
+    </ol>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/07/Java-Do-While-Example-Do-While-In-Java-Tutorial.png" title="DO WHILE LOOP" alt="PICTURE OF DO WHILE LOOP"><br><br>
+    <br>
+
+    <h5 class="text-left">example:</h5><br>
+    <blockquote>int i = 0;<br>
+        do {<br>
+          System.out.println(i);<br>
+          i++;<br>
+        }<br>
+        while (i < 5);<br>
+    </blockquote>
+    <br>
+    <h5 class="text-left"><a href="https://www.w3schools.com/java/tryjava.asp?filename=demo_do_while_loop" class="example">Try it Yourself >> </a></h5><br>
+    <br><br>
+    </div>
+</div>
+<br><br>
+  </body>

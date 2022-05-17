@@ -1,0 +1,188 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--TAUP, NORSIMA-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+           line-height: 40px;
+       
+       }
+      
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+       .size{
+        width:  45%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        @media only screen and (max-width: 480px) {
+  .size {
+    width: 100%;
+  }
+}
+
+
+
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin-top: 7%;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    display: inline-block;
+    font-size: 8px;
+  }
+}
+
+
+     </style>
+     <div class="nav">
+      <div>
+          <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+      </div>
+      <a href="../../../learn.html">Learn</a>
+      <a href="../../../../exercise/exercise.html">Exercise</a>
+      <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+  </div>
+     <title>CSS COMMENTS</title>
+     <div class="sidebar" >
+        <a  href="css.html"><b>CSS INTRODUCTION</b></a>
+        <a href="selctors.html"><b>CSS SELECTORS</b></a>
+        <a href="cssBackground.html"><strong>CSS BACKGROUND</strong></a>
+        <a href="cssTextFormat.html"><b>CSS TEXT FORMAT</b></a>
+        <a href="cssBorders.html"><b>CSS BORDERS</b></a>
+        <a href="cssFonts.html"><b>CSS FONTS</b></a>
+        <a class="active"  href="cssComments.html"><b>CSS COMMENTS</b></a>
+        <a href="margin&padding.html"><b>CSS MARGIN & PADDING</b></a>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center text-danger">CSS COMMENTS</h1> <br>
+    <br>
+    <p>In CSS, comments are statements in your code that the compiler ignores and does not execute. The code is explained via comments. They improve the readability and comprehension of the application. </p>
+    <br>
+    <img src="../../../../gallery/commentsyntax.PNG" class="size">
+    <br><hr>
+    
+        <p>A single-line or multi-line comment is acceptable. Both single and multiline comments can employ the /* */ comment syntax. Although older browsers support the &lt;-- --&gt; syntax for concealing in CSS, it is no longer supported.
+           Adding comments to the code is a good practice that can assist someone comprehend it if they read it or revisit it later.<br>
+           <br>
+           <b>Note:</b> The outputs are the same because comments are ignored by the browser and are not interpreted.
+          </p>
+        <br>
+        <img src="../../../../gallery/fontfamily.PNG"class="size">
+        <br>
+        <img src="../../../../gallery/comments.PNG"class="size">
+        <hr>
+
+
+     
+
+
+
+        
+
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

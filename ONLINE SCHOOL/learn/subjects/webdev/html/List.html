@@ -1,0 +1,220 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+    <title>HTML ELEMENTS</title>
+  </head>
+  <style>
+    body{
+        background-color: #282a35;
+        color: #f2f2f2;
+        font-family: "Tahoma";
+        width: 100%;
+        
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .size{
+    width:40%;
+     display:block;
+     margin-left: auto;
+     margin-right: auto;
+     
+     }
+     @media only screen and (max-width: 480px) {
+       .size{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin-top: 7%;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin: 0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 230px;
+  padding: 1px 16px;
+ 
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+       
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}  
+
+     
+    
+         
+     </style>
+     <div class="nav">
+      <div>
+          <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+      </div>
+      <a href="../../../learn.html">Learn</a>
+      <a href="../../../../exercise/exercise.html">Exercise</a>
+      <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+  </div>
+     <div class="sidebar" >
+      <a  href="prject.html"><b>HTML INTRODUCTION</b></a>
+      <a  href="htmlAttributes.html"><strong>HTML ATTRIBUTE</strong></a>
+      <a  href="elements.html"><strong>HTML ELEMENTS</strong></a>
+      <a href="styles.html"><b>HTML TEXT FORMAT</b></a>
+      <a  href="Heading.html"><b>HTML HEADINGS</b></a>
+      <a  href="entities.html"><b>HTML Character Entities</b></a>
+      <a  class="active" href="List.html"><b>HTML LIST</b></a>
+      <a href="media.html"><b>HTML IMAGE</b></a>
+    
+    </div>
+     
+
+     
+ </style>
+ 
+  <div class="content">
+  <h1 class="text-center">HTML LIST</h1>
+<br>
+<p>HTML lists are an excellent method to arrange your website's content.
+    You may use list components to organize your content.</p><hr>
+
+    <p>You need two elements to create a bulleted (or unordered )list:<br><br>
+        <mark>&lt;ul&gt; &lt;/ul&gt;</mark> The unordered lists element enables you to create the list<br><br>
+        <mark>&lt;li&gt; &lt;/li&gt;</mark> You specify individual items on the list with the list item element
+        </p>
+
+<br>
+<h2 class="text-danger">Sample code for Unordered List</h2>
+<br>
+<img src="../../../../gallery/unordered.PNG" class="size" alt="Sample code">
+<b>Output:</b>
+<img src="../../../../gallery/unorderedOutput.PNG" class="size" alt="Sample output">
+<br><hr>
+
+<h3 class="text-center text-danger">Specifying the type of bullet for the entire list</h3>
+<p><br>
+    To specify a square:<b>&lt;ul type=“square”&gt;</b><br>
+     To specify a circle:<b>&lt;ul type=“circle”&gt;</b><br>
+    To specify a disc:<b>&lt;ul type=“disc”&gt;</b><br>
+
+	Note: &lt;li&gt; tag also contains attribute type with values “square”,”circle”,”disc”
+
+</p>
+<p><b>Example: </b>Sample code for type of bullet</p>
+<img src="../../../../gallery/bullet.PNG" class="size" alt="Sample code for type of bullet">
+<br>
+<b>Output:</b>
+<img src="../../../../gallery/bulletOutput.PNG" class="size" alt="Output for type of bullet">
+<hr><br>
+<p><b>Example:</b> Different Layout</p>
+<img src="../../../../gallery/layoutlist.PNG" class="size" alt="Sample code for layout list">
+<br>
+<b>Output:</b>
+<img src="../../../../gallery/outputlayout.PNG" class="size" alt="Output for layout list">
+<hr><br>
+<h2 class="text-danger">Sample code for Ordered List</h2><br>
+<p>Ordered list is a list that arrange items in sequence by number or letter.
+    Ordered List have similar structure to unordered lists.<br><br>
+    To create an ordered list, you need the following:
+   <mark>&lt;ol&gt&lt;/ol&gt;</mark> the ordered list element,
+    <mark>&lt;li&gt&lt;/li&gt;</mark> the list item element.
+    </p>
+<b>Example: number list</b>
+<img src="../../../../gallery/orderd.PNG" class="size" alt="Sample code for ordered  list"><br>
+<b>Output:</b>
+<img src="../../../../gallery/outputordered.PNG"class="size" alt="Outputfor ordered  list"><br>
+
+
+
+
+
+
+
+  </div>
+  <br>
+</html>

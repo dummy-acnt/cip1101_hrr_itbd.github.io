@@ -1,0 +1,153 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+        body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+    
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+     </style>
+     <div class="sidebar">
+        <a href="landing.html"><strong>JAVA INTRODUCTION</strong></a>
+        <a href="datatypes.html"><strong>DATA TYPES</strong></a>
+        <a href="string.html"><strong>STRING</strong></a>
+        <a class="active" href="Boolean.html"><strong>BOOLEAN</strong></a>
+        <a href="conditionals.html"><strong>CONDITION</strong></a>
+        <a href="ifstatement.html"><strong>IF STATEMENT</strong></a>
+        <a href="looping.html"><strong>LOOPING</strong></a>
+        <a href="arrays.html"><strong>ARRAYS</strong></a>
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">BOOLEAN</h1> <br>
+    <br>
+    <p>Any kind of logic, function, expression, or theory based on the work of George Boole is considered Boolean. Related to this, "Boolean" may refer to: Boolean data type, a form of data with only two possible values (usually "true" and "false") Boolean algebra, a logical calculus of truth values or set membership.</p>
+    <p class="text-left">
+        Boolean is a primitive data type that takes either “true” or “false” values. So anything that returns the value “true' or “false” can be considered as a boolean example. Checking some conditions such as <mark class="word">“a==b” or “a&lt;b”</mark> or <mark class="word">“a&gt;b”</mark> can be considered as boolean</p>
+    <br><br><br>
+    <h2>Boolean Values</h2>
+    <p>A boolean type is declared with the boolean keyword and can only take the values true or false:
+    </p>
+        <li><a href="#true" class="li">TRUE</a></li>
+        <li><a href="#false" class="li">FALSE</a></li>
+
+    <h2 class="text-center" id="true">true</h2><br>
+    <img class="fluid"src="http://www.qafox.com/wp-content/uploads/2019/09/Using-Data-Types-Java-boolean.png" title="True boolean" alt="PICTURE OF TRUE BOOLEAN"><br>
+    <p> TRUE is a reference to an object of the class Boolean, while true is just a value of the primitive boolean type. Classes like Boolean are often called "wrapper classes", and are used when you need an object instead of a primitive type (for example, if you're storing it in a data structure).</p><br><br>
+
+    <h2 class="text-center" id="false">FALSE()</h2><br>
+    <img class="fluid"src="https://3.bp.blogspot.com/-H-sVxWjY6oo/XCmrRneE06I/AAAAAAAAFQo/YS0JOb0Rahcy2xZCc8DfTpcMf9ArYSn5QCLcBGAs/w1200-h630-p-k-no-nu/boolean-keyword.PNG" title="False Boolean" alt="PICTURE OF FALSE BOOLEAN"><br>
+    <p>The boolean keyword is used with variables and methods. Its default value is false.</p><br><br>
+        
+    <h5 class="text-left">example:</h5><br>
+    <blockquote>boolean isJavaFun = true;<br>
+        boolean isFishTasty = false;<br>
+        System.out.println(isJavaFun);     // Outputs true<br>
+        System.out.println(isFishTasty);   // Outputs false<br>
+    </blockquote>
+    <h5 class="text-left"><a href="https://www.w3schools.com/java/tryjava.asp?filename=demo_booleans" class="example">Try it Yourself >> </a></h5><br>
+    <br><br>
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

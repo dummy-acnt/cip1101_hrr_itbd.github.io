@@ -1,0 +1,142 @@
+body {
+    background-color: #282A35;
+    font-family:'Franklin Gothic Medium';
+    color: #1e1e1e;
+}
+
+#main {
+    width: 80%;
+    max-width: 950px;
+    border: 1px gray solid;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+#header {
+    margin-top: 0;
+    border: 2px solid #282A35;
+    padding: 5px;
+    height: 220px;
+    background: #EB3F3F;
+    color: #F2F2F2;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 30px;
+    margin-left: 20px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 40px;
+    letter-spacing: 3px;
+    font-size: 3em;
+}
+
+h2 {
+    clear: both;
+    padding-top: 20px;
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+
+button {
+    width: 100px;
+    margin-top: 20px;
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #EB3F3F;
+    color: #F2F2F2;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+p{
+    font-size: 2em;
+    text-align: center;
+    color: #EB3F3F;
+}
+
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+.nav1 {
+    height: 120px;
+    float: left;
+    margin-top: 30px;
+    padding: 5px;
+}
+  
+.nav1 a {
+    color: #f2f2f2;
+    text-align: left;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+    padding: 10px;
+    float: left;
+}
+
+.nav1 a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+#answer{
+    font-size: 22px;
+    text-align: center;
+    color: #EB3F3F;
+    text-decoration: none;
+    color: #1E1E1E;
+    font-style: italic;
+}
+
+.footer{
+    width: 100%;
+    height:80px;
+    background-color:#191b22;
+}
+
+.footer a{
+    text-decoration: none;
+    color:#a2a2a2;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    font-size: 14px;
+    padding: 25px 75px;
+    float: left;
+    margin-left: 5%;
+}
+
+.footer a:hover{
+    color:#c7c7c7;
+    text-decoration: underline;
+}

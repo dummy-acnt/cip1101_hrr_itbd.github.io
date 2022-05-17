@@ -1,0 +1,110 @@
+body {
+    background-color: #282A35;
+    font-family:'Franklin Gothic Medium';
+    color: #1e1e1e;
+}
+
+#main {
+    width: 80%;
+    max-width: 950px;
+    border: 1px gray solid;
+    margin: 30px auto;
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+#header {
+    margin-top: 0;
+    border: 2px solid #282A35;
+    padding: 5px;
+    height: 450px;
+    background: #282A35;
+    color: #EB3F3F;
+}
+
+button {
+    width: 160px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+    padding: .5em 1em;
+    border-radius: 6px;
+    background-color: #282A35;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid #EB3F3F;
+}
+
+button a{
+    text-decoration: none;
+    color: #F2F2F2;
+
+}
+
+button a:hover{
+    text-decoration: 2px underline #F2F2F2;
+    font-size: 1.2em;
+}
+
+h1{
+    text-align: left;
+    padding-left: 20px;
+    letter-spacing: 3px;
+    font-size: 2.5em;
+}
+
+h2 {
+    clear: both;
+    font-size: 1.5em;
+    text-indent: 20px;
+    line-height: 30px;
+    color: #f2f2f2;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+.nav1 {
+    height: 120px;
+    float: left;
+    margin-top: 30px;
+    padding: 5px;
+}
+  
+.nav1 a {
+    color: #f2f2f2;
+    text-align: left;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+    padding: 10px;
+    float: left;
+}
+
+.nav1 a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}

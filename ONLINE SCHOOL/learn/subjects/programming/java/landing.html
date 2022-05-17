@@ -1,0 +1,181 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.fluid{
+  width: 450px;
+  height: 250px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+     </style>
+     <div class="sidebar" >
+      <a class="active" href="landing.html"><b>JAVA INTRODUCTION</b></a>
+      <a href="datatypes.html"><strong>DATA TYPES</strong></a>
+      <a href="string.html"><strong>STRING</strong></a>
+      <a href="Boolean.html"><strong>BOOLEAN</strong></a>
+      <a href="conditionals.html"><strong>CONDITION</strong></a>
+      <a href="ifstatement.html"><strong>IF STATEMENT</strong></a>
+      <a href="looping.html"><strong>LOOPING</strong></a>
+      <a href="arrays.html"><strong>ARRAYS</strong></a>
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">JAVA?</h1> <br>
+    <br>
+    <p class="text-left">
+        Java is a programming language and computing platform first released by Sun Microsystems in 1995. It has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built. New, innovative products and digital services designed for the future continue to rely on Java, as well.<br><br>
+        While most modern Java applications combine the Java runtime and application together, there are still many applications and even some websites that will not function unless you have a desktop Java installed. Java.com, this website, is intended for consumers who may still require Java for their desktop applications – specifically applications targeting Java 8. Developers as well as users that would like to learn Java programming should visit the dev.java website instead and business users should visit oracle.com/java for more information.
+    </p>
+    <br><br>
+    <h5 class="text-center">What JAVA means?</h5>
+    <p>Java is an object-oriented programming language that produces software for multiple platforms. When a programmer writes a Java application, the compiled code (known as bytecode) runs on most operating systems (OS), including Windows, Linux and Mac OS.</p><br>
+    <h5 class="text-center">What is Java used for?</h5>
+    <p>What is Java used for? - Java is used to write applications for different platforms that run JRE and supports applications that run on a single device like a desktop or mobile phone. Java can also be used to develop applications that work in a distributed manner.</p><br>
+    <br><br>
+    <h5 class="text-center">History of Java Programming Language</h5><br>
+    <li>The Java language was initially called OAK.</li><br>
+    <li>Originally, it was developed for handling portable devices and set-top boxes. Oak was a massive failure.</li><br>
+    <li>In 1995, Sun changed the name to “Java” and modified the language to take advantage of the burgeoning www (World Wide Web) development business.</li><br>
+    <li>Later, in 2009, Oracle Corporation acquired Sun Microsystems and took ownership of three key Sun software assets: Java, MySQL, and Solaris.</li><br>
+    <br><br><br>
+    <h5 class="text-center"><u>BASIC JAVA</u></h1>
+        <br>
+        <img class="fluid"src="https://refreshjava.com/images/java/programmingTerms.png" title="BASIC JAVA" alt="PICTURE OF BASIC JAVA">
+        <br>
+        <li><mark><strong>class</strong></mark> - is a template used to create objects and to define object data types and methods. Classes are categories, and objects are items within each category. All class objects should have the basic class properties.</li>
+        <br>
+        <li><mark><strong>class name</strong></mark> - instances of the class Class represent classes and interfaces in a running Java application. The primitive Java types (boolean, byte, char, short, int, long, float, and double), and the keyword void are also represented as Class objects.</li>
+        <br>
+        <li><mark><strong>public</strong></mark> - is an access modifier used for classes, attributes, methods and constructors, making them accessible by any other class.</li>
+        <br>
+        <li><mark><strong>static</strong></mark> - static means that the particular member belongs to a type itself, rather than to an instance of that type. This means we'll create only one instance of that static member that is shared across all instances of the class.</li>
+         <br>
+         <li><mark><strong>void</strong></mark> - specifies that a method should not have a return value.</li>
+         <br>
+         <li><mark><strong>main method</strong></mark> - is the entry point of any java program. Its syntax is always public static void main(String[] args) . You can only change the name of String array argument, for example you can change args to myStringArgs . Also String array argument can be written as String... args or String args[] .</li>
+         <br>
+         <li><mark><strong>parameter type</strong></mark> - also known as a type variable, is an identifier that specifies a generic type name. The type parameters can be used to declare the return type and act as placeholders for the types of the arguments passed to the generic method, which are known as actual type arguments.</li>
+         <br>
+         <li><mark><strong>parameter name</strong></mark> - named argument or keyword arguments refer to a computer language's support for function calls that clearly state the name of each parameter within the function call.</li>
+         <br>
+         <li><mark><strong>statement</strong></mark> - a statement is an executable instruction that tells the compiler what to perform. It forms a complete command to be executed and can include one or more expressions. A sentence forms a complete idea that can include one or more clauses.</li>
+         <br>
+         <li><mark><strong>block</strong></mark> - is a set of code enclosed within curly braces { } within any class, method, or constructor. It begins with an opening brace ( { ) and ends with an closing braces ( } ). Between the opening and closing braces, we can write codes which may be a group of one or more statements.</li>
+         <br>
+         <li><mark><strong>data types</strong></mark> - specify the different sizes and values that can be stored in the variable. There are two types of data types in Java: Primitive data types: The primitive data types include boolean, char, byte, short, int, long, float and double.</li>
+         <br>
+         <li><mark><strong>end of main method</strong></mark> - If you just want to exit from current method, you can use return statement. return statement stops the execution of current method and return it to calling method. It is a reserved keyword which compiler already knows. return can end java program if it is the last statement inside main method of class being executed.</li>
+         <br>
+         <li><mark><strong>end of class</strong></mark> - The final modifier for finalizing the implementations of classes, methods, and variables</li>
+         <br>
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

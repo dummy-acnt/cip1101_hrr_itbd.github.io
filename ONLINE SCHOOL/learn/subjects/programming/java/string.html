@@ -1,0 +1,174 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+     </style>
+     <div class="sidebar" >
+      <a href="landing.html"><b>JAVA INTRODUCTION</b></a>
+      <a href="datatypes.html"><strong>DATA TYPES</strong></a>
+      <a class="active" href="string.html"><strong>STRING</strong></a>
+      <a href="Boolean.html"><strong>BOOLEAN</strong></a>
+      <a href="conditionals.html"><strong>CONDITION</strong></a>
+      <a href="ifstatement.html"><strong>IF STATEMENT</strong></a>
+      <a href="looping.html"><strong>LOOPING</strong></a>
+      <a href="arrays.html"><strong>ARRAYS</strong></a>
+
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">STRING</h1> <br>
+    <br>
+    <p class="text-left">
+        Strings, which are widely used in Java programming, are a sequence of characters. In the Java programming language, strings are objects. The Java platform provides the String class to create and manipulate strings.</p>
+        Strings in Java are Objects that are backed internally by a char array. Since arrays are immutable(cannot grow), Strings are immutable as well. Whenever a change to a String is made, an entirely new String is created. Whenever a String Object is created as a literal, the object will be created in String constant pool.
+    <br><br><br>
+    <h2>JAVA STRING CLASS</h2>
+    <p>Java String class provides a lot of methods to perform operations on strings such as:
+    </p>
+        <li><a href="#compare" class="li">compareTo()</a></li>
+        <li><a href="#concat" class="li">concat()</a></li>
+        <li><a href="#equals" class="li">equals()</a></li>
+        <li><a href="#split" class="li">split()</a></li>
+        <li><a href="#length" class="li">length()</a></li>
+        <li><a href="#intern" class="li">intern()</a></li>
+        <li><a href="#substring" class="li">substring()</a></li>
+
+    <h2 class="text-center" id="compare">compareTo()</h2><br>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/10/Java-String-compareTo-Example-String-compareTo-Function.png" title="compareTo data type" alt="PICTURE OF COMPARETO DATA TYPE"><br>
+    <p>The compareTo() method compares two strings lexicographically. The comparison is based on the Unicode value of each character in the strings. The method returns 0 if the string is equal to the other string.</p><br><br>
+
+    <h2 class="text-center" id="concat">concat()</h2><br>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/09/Concat-In-Java-Example-Java-String-Concat-Method.png" title="concat data type" alt="PICTURE OF CONCAT DATA TYPE"><br>
+    <p>The CONCAT function combines the text from multiple ranges and/or strings, but it doesn't provide delimiter or IgnoreEmpty arguments. CONCAT replaces the CONCATENATE function. However, the CONCATENATE function will stay available for compatibility with earlier versions of Excel.</p><br><br>
+    
+    <h2 class="text-center" id="equals">equals()</h2><br>
+    <img class="fluid" src="https://appdividend.com/wp-content/uploads/2019/09/Java-String-Equals-Example-String-equals-In-Java.png" title="equals data type" alt="PICTURE OF EQUALS DATA TYPE"><br>
+    <p>The equals() method compares two strings, and returns true if the strings are equal, and false if not.</p><br><br>
+
+    <h2 class="text-center" id="split">split()</h2><br>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/11/Java-String-split-Function-Example.png" title="split data type" alt="PICTURE OF SPLIT DATA TYPE"><br>
+    <p>The method split() splits a String into multiple Strings given the delimiter that separates them. The returned object is an array which contains the split Strings. We can also pass a limit to the number of elements in the returned array.</p><br><br>
+
+    <h2 class="text-center" id="length">length()</h2><br>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/10/Java-String-length-How-To-Find-String-Length-In-Java.png" title="length data type" alt="PICTURE OF LENGTH DATA TYPE"><br>
+    <p> length is a final variable applicable for arrays. With the help of the length variable, we can obtain the size of the array. string. length() : length() method is a final variable which is applicable for string objects. The length() method returns the number of characters present in the string.</p><br><br>
+
+    <h2 class="text-center" id="intern">intern()</h2><br>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/11/Java-String-intern-Method-Example.png" title="intern data type" alt="PICTURE OF INTERN DATA TYPE"><br>
+    <p>The method intern() creates an exact copy of a String object in the heap memory and stores it in the String constant pool. Note that, if another String with the same contents exists in the String constant pool, then a new object won't be created and the new reference will point to the other String.</p><br><br>
+    
+    <h2 class="text-center" id="substring">substring()</h2><br>
+    <img class="fluid"src="https://appdividend.com/wp-content/uploads/2019/11/Java-String-substring-Function-Example-Tutorial.png" title="substring data type" alt="PICTURE OF SUBSTRING DATA TYPE"><br>
+    <p>Substring in Java is a commonly used method of java. lang. String class that is used to create smaller strings from the bigger one. As strings are immutable in Java, the original string remains as it is, and the method returns a new string.</p><br><br>
+    
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

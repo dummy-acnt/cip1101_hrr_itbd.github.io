@@ -1,0 +1,239 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--TAUP, NORSIMA-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+    <title>CSS SELECTOR</title>
+  </head>
+
+   <style>
+   body{
+     background-color: #282a35;
+     color: #f2f2f2;
+    font-family: "Tahoma";
+    width:auto;
+    }
+    h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  .size{
+    width:  35%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    @media only screen and (max-width: 480px) {
+    .size{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin-top: 7%;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    display: inline-block;
+    font-size: 8px;
+  }
+}
+
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+     </style>
+     <div class="nav">
+      <div>
+          <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+      </div>
+      <a href="../../../learn.html">Learn</a>
+      <a href="../../../../exercise/exercise.html">Exercise</a>
+      <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+  </div>
+     <div class="sidebar" >
+        <a  href="css.html"><b>CSS INTRODUCTION</b></a>
+        <a class="active" href="selctors.html"><strong>CSS SELECTORS</strong></a>
+        <a href="cssBackground.html"><b>CSS BACKGROUND</b></a>
+        <a href="cssTextFormat.html"><b>CSS TEXT FORMAT</b></a>
+        <a href="cssBorders.html"><b>CSS BORDERS</b></a>
+        <a href="cssFonts.html"><b>CSS FONTS</b></a>
+        <a href="cssComments.html"><b>CSS COMMENTS</b></a>
+        <a href="margin&padding.html"><b>CSS MARGIN & PADDING</b></a>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center text-danger">CSS SELECTORS</h1> <br>
+    <br>
+    <p class="text-center">CSS selectors are used to “find” (or select) HTML elements based on their element name, id, class, attribute, and more..</p>
+    <br><br><br>
+    <hr>
+
+
+
+    <!--UNIVERSAL SELECTOR-->
+    <h5 class=" text-warning">UNIVERSAL SELECTOR</h5>
+        <br>
+        <p>The universal selector merely matches the name of any element type, rather than choosing components of a specific kind.</p>
+        <br>
+        
+     <p><b>Example:</b> This rule renders the content of every element in our document in black.</p>
+     <img src="../../../../gallery/UNIVERSALCODE.PNG" class="size" title="EXAMPLE of universal selector" alt="PICTURE OF SAMPLE CODE OF UNIVERSAL SELECTOR">
+    <br>
+    <p><strong>Output:</strong></p>
+    <img src="../../../../gallery/universaL.PNG" class="size"  title="OUTPUT of universal selector" alt="PICTURE OF OUTPUT UNIVERSAL SELECTOR">
+    <br>
+    <hr>
+
+
+    <!--ELEMENT SELECTOR-->
+    <h5 class=" text-warning">ELEMENT SELECTOR</h5>
+    <br>
+        <p>The element selector looks for elements by their names. You may select all p elements on a page in this way (all p elements will be center-aligned and have a red text color in this case):.</p>
+        <br>
+        <p><b>Example:</b>.</p>
+        <img src="../../../../gallery/elementslector.PNG" class="size"  title="EXAMPLE of Element selector" alt="PICTURE OF SAMPLE CODE OF ELEMENT SELECTOR">
+        <br>
+        <p><strong>Output:</strong></p>
+        <img src="../../../../gallery/elementoutput.PNG" class="size"  title="OUTPUT of Element selector" alt="PICTURE OF OUTPUT ELEMENT SELECTOR">
+        <br>
+        <hr>
+
+
+    <!--ID SELECTOR-->
+        <h5 class=" text-warning">ID SELECTOR</h5>
+            <br>
+            <p> The id selector uses the id attribute of an HTML element to select a specific element.<br>
+                To select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+            <br>
+            
+         <p><b>Example:</b>  The id selector uses the id attribute of an HTML element to select a specific element..</p>
+         <img src="../../../../gallery/idslector.PNG" class="size"  title ="EXAMPLE of id selector" alt="PICTURE OF SAMPLE CODE OF id SELECTOR">
+        <br>
+        <p><strong>Output:</strong></p>
+        <img src="../../../../gallery/outputidselector.PNG" class="size"  title="OUTPUT of id selector" alt="PICTURE OF OUTPUT id SELECTOR">
+        <br>
+        <hr>
+
+        
+    <!--CLASS SELECTOR-->
+    <h5 class=" text-warning">CLASS SELECTOR</h5>
+    <br>
+    <p> The class selector selects elements with a specific class attribute.<br>
+        To select elements with a specific class, write a period (.) character, followed by the name of the class.</p>
+    <br>
+    
+    <p><b>Example:</b>  In the example below,&lt;h1&gt;with class attribute will be blue and center-aligned:</p>
+     <img src="../../../../gallery/classSelectorCode.PNG" class="size"  title ="EXAMPLE of Class selector" alt="PICTURE OF SAMPLE CODE OF Class SELECTOR">
+    <br>
+    <p><strong>Output:</strong></p>
+    <img src="../../../../gallery/classSelector.PNG" class="size"  title="OUTPUT of Class selector" alt="PICTURE OF OUTPUT Class SELECTOR">
+    <br>
+    <hr>
+
+    <!--GROUPING SELECTOR-->
+    <h5 class=" text-warning">GROUPING SELECTOR</h5>
+    <br>
+    <p> If you have elements with the same style definitions you can use groupig selectors to minimize code.<br>
+        To group selectors, separate each selector with a comma. </p>
+    <br>
+    
+    <p><b>Example:</b></p>
+     <img src="../../../../gallery/grouping.PNG" class="size"  title ="EXAMPLE of grouping selector" alt="PICTURE OF SAMPLE CODE OF grouping SELECTOR">
+    <br>
+    <p><strong>Output:</strong></p>
+    <img src="../../../../gallery/gourpingOutput.PNG" class="size"  title="OUTPUT of grouping selector" alt="PICTURE OF OUTPUT Grouping SELECTOR">
+    <br>
+
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

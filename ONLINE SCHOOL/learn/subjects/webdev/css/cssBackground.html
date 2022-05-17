@@ -1,0 +1,206 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--TAUP, NORSIMA-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+    <title>CSS BACKGROUND</title>
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+       }
+   
+
+       
+        .size{
+        width:  45%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        @media only screen and (max-width: 480px) {
+  .size {
+    width: 100%;
+  }
+}
+.left{
+    width:100%;
+}
+
+
+
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin-top: 7%;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    display: inline-block;
+    font-size: 8px;
+  }
+}
+
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+     </style>
+     <div class="nav">
+      <div>
+          <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+      </div>
+      <a href="../../../learn.html">Learn</a>
+      <a href="../../../../exercise/exercise.html">Exercise</a>
+      <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+  </div>
+     <div class="sidebar" >
+        <a  href="css.html"><b>CSS INTRODUCTION</b></a>
+        <a href="selctors.html"><b>CSS SELECTORS</b></a>
+        <a class="active" href="cssBackground.html"><b>CSS BACKGROUND</b></a>
+        <a href="cssTextFormat.html"><b>CSS TEXT FORMAT</b></a>
+        <a href="cssBorders.html"><b>CSS BORDERS</b></a>
+        <a href="cssFonts.html"><b>CSS FONTS</b></a>
+        <a href="cssComments.html"><b>CSS COMMENTS</b></a>
+        <a href="margin&padding.html"><b>CSS MARGIN & PADDING</b></a>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center text-danger">CSS BACKGROUND</h1> <br>
+    <br>
+    <p class="">Background effects for elements are defined using CSS background properties. There are lots of properties to design the background.</p>
+    <br><br><br>
+    <h3 class="text-danger">CSS BACKGROUND PROPERTIES:</h3>
+   <ul>
+    <li><u>CSS Background-color Property:</u> In CSS, the background-color property is used to specify an element's background color.</li>
+    <br>
+    <li><u>CSS Background-image Property: </u>The background-image property is used to give an element one or more background pictures.</li>
+    <br>
+    <li><u>CSS Background-repeat Property: </u>used to repeat the background picture both horizontally and vertically.</li><br>
+    <br>
+    <li><u>CSS Background-attachment Property:</u>used to describe the type of attachment of the background picture to its container in CSS.</li><br>
+    <br>
+    <li><u>CSS CSS Background-position Property: </u> CSS body-position property is mostly used to place an image.</li><br>
+    <li><u>CSS Background-repeat Property: </u></li></ul><br>
+    <br>
+    <hr>
+    <b>Example:</b>
+    <br>
+    <img src="../../../../gallery/backgroundColor.PNG" class="size" title="Sample Code for Background-color" alt="Sample Code for Background-color">
+    <br>
+    <b>Output:</b>
+    <img src="../../../../gallery/backgroundColorOutput.PNG"class="size" title="Sample output for Background-color" alt="Sample output for Background-color">
+    <hr>
+    <p><b>Example:</b> This property specify an image to use as the background of an element. By default, the image is repeated so it covers the entire element. </p>
+    <br> 
+    <img src="../../../../gallery/imageBackground.PNG" class="left" title="Sample output for Background-color" alt="Sample output for Background-color">
+    <br>
+    <b>Output:</b>
+    <br>
+    <img src="../../../../gallery/imageBackgroundOutput.PNG" class="left" title="Sample output for Background-color" alt="Sample output for Background-color">
+<hr>
+    <p><b>Example: </b></p>
+    <img src="../../../../gallery/bgCode.PNG" class="left" title="Sample output for Background-color" alt="Sample output for Background-color">
+    <b>Output:</b>
+    <img src="../../../../gallery/bgExample.PNG" class="size" title="Sample output for Background-color" alt="Sample output for Background-color">
+
+
+
+
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>

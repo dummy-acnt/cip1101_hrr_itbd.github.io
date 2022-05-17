@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../../design/algorithm.css">
+    </head>
+    <body>
+        <div class="nav">
+            <div>
+                <a href="../../../index.html"><img src="../../../gallery/icon.png"></a>
+            </div>
+            <a href="../../learn.html">Learn</a>
+            <a href="../../../exercise/exercise.html">Exercise</a>
+            <a href="../../../Quiz/QUIZ.html">Quiz</a>
+        </div>
+        <div class="sidebar" >
+            <a href="algo.html"><b>Introduction</b></a>
+            <a href="array.html"><b>Arrays</b></a>
+            <a href="list.html"><strong>Lists</strong></a>
+            <a href="stack.html"><strong>Stacks</strong></a>
+            <a class="active" href="binary.html"><b>Binary Search</b></a>
+            <a href="linear.html"><b>Linear Search</b></a>
+            <a href="bubble.html"><b>Bubble Sort</b></a>
+            <a href="insertion.html"><b>Insertion Sort</b></a>
+            <a href="selection.html"><b>Selection Sort</b></a>
+        </div>
+        
+        <div align="center">
+            <div class="box">
+                <h1>Binary Search</h1>
+                <p>Binary Search is an algorithm for searching through elements of a presorted array by repeatedly dividing the search interval in half.The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O.</p>
+                
+                <h2>Example:</h2>
+                <div class="pic">
+                    <img src="../../../gallery/binary.png">
+                </div>
+                <p><span>Step 1</span> - take the element in the center of an array which is 16</p>
+                <p><span>Step 2</span> - Compare 23 to 16. since 16 is less than 23, all the elements lower than 16 will be eliminated</p>
+                <p><span>Step 3</span> - take the element in the center the new array, this time it's 56. since 56 is more than 23, all the elements more than 56 will be eliminated.</p>
+                <p><span>Step 4</span> - take the element in the center of the remaining array. and this time it's 23. return the position of 23.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,489 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <title>PYTHON DATA TYPES</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+    <title>HTML ELEMENTS</title>
+  </head>
+  <style>
+    body{
+        background-color: #282a35;
+        color: #f2f2f2;
+        font-family: "Tahoma";
+        width: 100%;
+        
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+     img{
+    width:50%;
+     display:block;
+     margin-left: auto;
+     margin-right: auto;
+     
+     }
+     @media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin: 0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 230px;
+  padding: 1px 16px;
+  
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+         
+img{
+  width: 750px;
+}
+     
+    
+         
+     </style>
+     <div class="sidebar" >
+        <a class="active" href="prject.html"><b>PYTHON INTRODUCTION</b></a>
+        <a href="PyGetStarted.html"><strong>PYTHON GET STARTED</strong></a>
+        <a href="PySyntax.html"><strong>PYTHON SYNTAX</strong></a>
+        <a href="PyComments.html"><b>PYTHON COMMENTS</b></a>
+        <a href="PyVariables.html"><b>PYTHON VARIABLES</b></a>
+        <a href="PyDataTypes.html"><b>PYTHON DATA TYPES</b></a>
+        <a href="PyIfElse.html"><b>PYTHON IF ELSE</b></a>
+        <a href="PyWhileLoop.html"><b>PYTHON WHILE LOOP</b></a>
+        <a href="PyForLoop.html"><b>PYTHON FOR LOOP</b></a>
+      
+      </div>
+     
+
+     
+ </style>
+ 
+  <div class="content">
+      <br>
+  <h1 class="text-center">Python Data Types</h1>
+  
+  <h3 class="text-danger mt-5">Built-in Data Types</h3>
+
+  <p>In programming, data type is an important concept.</p>
+  <p>Variables can store data of different types, and different types can do different things.</p>
+  <p>Python has the following data types built-in by default, in these categories:</p>
+
+  <img src="IMAGE/18.png" title="Syntax" alt="Picture of syntax">
+
+
+  <h3 class="text-danger mt-5">Getting the Data Type</h3>
+
+  <p>You can get the data type of any object by using the <strong class="text-danger mt-5">type()</strong> function:</p>
+
+  <img src="IMAGE/19.png" title="Syntax" alt="Picture of syntax">
+
+  <br>
+
+  <div class="table-responsive"></div>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+   
+          <th scope="col" class="text-center text-light bg-danger ">Example</th>
+          <th scope="col" class="text-center text-light bg-danger">Data Type</th>
+
+        
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          
+          <td class="table-secondary text-dark text-center p-3"><b>x = "Hello World"</b></td>
+          <td class="table-secondary text-dark text-center p-3"><b>str</b>
+          </td>
+
+        </td>
+          
+        </tr>
+        <tr>
+         
+          <td class="table-secondary text-dark text-center p-3"><b>x = 20</b></td>
+          <td class="table-secondary text-dark text-center p-3"><b>int</b>
+          </td>
+
+        </td>
+          
+          
+        </tr>
+        <tr>
+          
+            <td class="table-secondary text-dark text-center p-3"><b>x = 20.5</b></td>
+            <td class="table-secondary text-dark text-center p-3"><b>float
+            </b>
+            </td>
+
+          </td>
+          
+        </tr>
+        <tr>
+         
+            <td class="table-secondary text-dark text-center p-3"><b>x = 1j</b></td>
+            <td class="table-secondary text-dark text-center p-3"><b>complex
+            </b>
+            </td>
+          </td>
+          </td>
+          
+        </tr>
+        <tr>
+         
+            <td class="table-secondary text-dark text-center p-3"><b>x = ["apple", "banana", "cherry"]</b></td>
+            <td class="table-secondary text-dark text-center p-3"><b>list
+
+            </b>
+            </td>
+        </tr>
+        <tr>
+          
+            <td class="table-secondary text-dark text-center p-3"><b>x = ("apple", "banana", "cherry")</b></td>
+            <td class="table-secondary text-dark text-center p-3"><b>tuple
+
+            </b>
+            </td>
+
+          
+        </tr>
+        <tr>
+          
+          <td class="table-secondary text-dark text-center p-3"><b>x = range(6)</b></td>
+          <td class="table-secondary text-dark text-center p-3"><b>range
+
+          </b>
+          </td>
+
+        
+      </tr>
+      <tr>
+          
+        <td class="table-secondary text-dark text-center p-3"><b>x = {"name" : "John", "age" : 36}</b></td>
+        <td class="table-secondary text-dark text-center p-3"><b>dict
+
+        </b>
+        </td>
+
+      
+    </tr>
+    <tr>
+          
+      <td class="table-secondary text-dark text-center p-3"><b>x = {"apple", "banana", "cherry"}</b></td>
+      <td class="table-secondary text-dark text-center p-3"><b>set
+
+      </b>
+      </td>
+
+    
+  </tr>
+  <tr>
+          
+    <td class="table-secondary text-dark text-center p-3"><b>x = frozenset({"apple", "banana", "cherry"})</b></td>
+    <td class="table-secondary text-dark text-center p-3"><b>frozenset
+
+    </b>
+    </td>
+
+  
+</tr>
+<tr>
+          
+  <td class="table-secondary text-dark text-center p-3"><b>x = True</b></td>
+  <td class="table-secondary text-dark text-center p-3"><b>bool
+
+  </b>
+  </td>
+
+
+</tr>
+<tr>
+          
+  <td class="table-secondary text-dark text-center p-3"><b>x = b"Hello"	</b></td>
+  <td class="table-secondary text-dark text-center p-3"><b>bytes
+
+  </b>
+  </td>
+
+
+</tr>
+<tr>
+          
+  <td class="table-secondary text-dark text-center p-3"><b>x = bytearray(5)</b></td>
+  <td class="table-secondary text-dark text-center p-3"><b>bytearray
+
+  </b>
+  </td>
+
+
+</tr>
+<tr>
+          
+  <td class="table-secondary text-dark text-center p-3"><b>x = memoryview(bytes(5))</b></td>
+  <td class="table-secondary text-dark text-center p-3"><b>memoryview
+
+  </b>
+  </td>
+
+
+</tr>
+
+<tr>
+          
+  <td class="table-secondary text-dark text-center p-3"><b>x = None</b></td>
+  <td class="table-secondary text-dark text-center p-3"><b>NoneType
+
+  </b>
+  </td>
+
+
+</tr>
+       
+      </tbody>
+    </table>
+
+
+    <h3 class="text-danger mt-5">Setting the Specific Data Type</h3>
+
+    <p>If you want to specify the data type, you can use the following constructor functions:</p>
+
+    <br>
+
+    <div class="table-responsive"></div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+     
+            <th scope="col" class="text-center text-light bg-danger ">Example</th>
+            <th scope="col" class="text-center text-light bg-danger">Data Type</th>
+  
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td class="table-secondary text-dark text-center p-3"><b>x = str("Hello World")</b></td>
+            <td class="table-secondary text-dark text-center p-3"><b>str</b>
+            </td>
+  
+          </td>
+            
+          </tr>
+          <tr>
+           
+            <td class="table-secondary text-dark text-center p-3"><b>x = int(20)</b></td>
+            <td class="table-secondary text-dark text-center p-3"><b>int</b>
+            </td>
+  
+          </td>
+            
+            
+          </tr>
+          <tr>
+            
+              <td class="table-secondary text-dark text-center p-3"><b>x = float(20.5)</b></td>
+              <td class="table-secondary text-dark text-center p-3"><b>float
+              </b>
+              </td>
+  
+            </td>
+            
+          </tr>
+          <tr>
+           
+              <td class="table-secondary text-dark text-center p-3"><b>x = complex(1j)</b></td>
+              <td class="table-secondary text-dark text-center p-3"><b>complex
+              </b>
+              </td>
+            </td>
+            </td>
+            
+          </tr>
+          <tr>
+           
+              <td class="table-secondary text-dark text-center p-3"><b>x = list(("apple", "banana", "cherry"))</b></td>
+              <td class="table-secondary text-dark text-center p-3"><b>list
+  
+              </b>
+              </td>
+          </tr>
+          <tr>
+            
+              <td class="table-secondary text-dark text-center p-3"><b>x = tuple(("apple", "banana", "cherry"))</b></td>
+              <td class="table-secondary text-dark text-center p-3"><b>tuple
+  
+              </b>
+              </td>
+  
+            
+          </tr>
+          <tr>
+            
+            <td class="table-secondary text-dark text-center p-3"><b>x = range(6)</b></td>
+            <td class="table-secondary text-dark text-center p-3"><b>range
+  
+            </b>
+            </td>
+  
+          
+        </tr>
+        <tr>
+            
+          <td class="table-secondary text-dark text-center p-3"><b>x = dict(name="John", age=36)</b></td>
+          <td class="table-secondary text-dark text-center p-3"><b>dict
+  
+          </b>
+          </td>
+  
+        
+      </tr>
+      <tr>
+            
+        <td class="table-secondary text-dark text-center p-3"><b>x = set(("apple", "banana", "cherry"))</b></td>
+        <td class="table-secondary text-dark text-center p-3"><b>set
+  
+        </b>
+        </td>
+  
+      
+    </tr>
+    <tr>
+            
+      <td class="table-secondary text-dark text-center p-3"><b>x = frozenset(("apple", "banana", "cherry"))</b></td>
+      <td class="table-secondary text-dark text-center p-3"><b>frozenset
+  
+      </b>
+      </td>
+  
+    
+  </tr>
+  <tr>
+            
+    <td class="table-secondary text-dark text-center p-3"><b>x = bool(5)</b></td>
+    <td class="table-secondary text-dark text-center p-3"><b>bool
+  
+    </b>
+    </td>
+  
+  
+  </tr>
+  <tr>
+            
+    <td class="table-secondary text-dark text-center p-3"><b>x = bytes(5)	</b></td>
+    <td class="table-secondary text-dark text-center p-3"><b>bytes
+  
+    </b>
+    </td>
+  
+  
+  </tr>
+  <tr>
+            
+    <td class="table-secondary text-dark text-center p-3"><b>x = bytearray(5)</b></td>
+    <td class="table-secondary text-dark text-center p-3"><b>bytearray
+  
+    </b>
+    </td>
+  
+  
+  </tr>
+  <tr>
+            
+    <td class="table-secondary text-dark text-center p-3"><b>x = memoryview(bytes(5))</b></td>
+    <td class="table-secondary text-dark text-center p-3"><b>memoryview
+  
+    </b>
+    </td>
+  
+  
+  </tr>
+  
+  <tr>
+            
+    <td class="table-secondary text-dark text-center p-3"><b>x = None</b></td>
+    <td class="table-secondary text-dark text-center p-3"><b>NoneType
+  
+    </b>
+    </td>
+  
+  
+  </tr>
+         
+        </tbody>
+      </table><br>
+
+
+
+
+
+  </div>
+  <br>
+</html>

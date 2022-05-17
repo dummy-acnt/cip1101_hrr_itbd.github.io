@@ -1,0 +1,191 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--RAMOS, JOHN DEXTER-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+   
+   <style>
+       body{
+           background-color: #282a35;
+           color: #f2f2f2;
+           font-family: "Tahoma";
+           width:auto;
+       
+       }
+       h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           color: orange;
+       }
+       h5{
+         color: orangered;
+       }
+       mark{
+         background-color: orange;
+       }
+       .fluid{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 5px 5px orange;
+        width: 450px;
+        height: 250px;
+        }
+        @media only screen and (max-width: 480px) {
+  .fluid{
+    width: 100%;
+  }
+}
+    
+        
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+     </style>
+     <div class="sidebar" >
+        <a href="landing.html"><strong>JAVA INTRODUCTION</strong></a>
+        <a href="datatypes.html"><strong>DATA TYPES</strong></a>
+        <a href="string.html"><strong>STRING</strong></a>
+        <a href="Boolean.html"><strong>BOOLEAN</strong></a>
+        <a href="conditionals.html"><strong>CONDITION</strong></a>
+        <a class="active" href="ifstatement.html"><strong>IF STATEMENT</strong></a>
+        <a href="looping.html"><strong>LOOPING</strong></a>
+        <a href="arrays.html"><strong>ARRAYS</strong></a>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center">IF STATEMENT</h1> <br>
+    <br>
+    <p>
+        The Java if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not.
+    </p>
+    <img class="fluid" src="https://media.geeksforgeeks.org/wp-content/uploads/20191118171408/If-statement-GeeksforGeeks1.jpg" title="True boolean" alt="PICTURE OF TRUE BOOLEAN"><br>
+      <br><br><br>
+    <h2>Java Conditional statements</h2>
+    <p>Java has the following conditional statements:
+    </p>
+        <li><a href="#if" class="li">Use <kbd>if</kbd> to specify a block of code to be executed, if a specified condition is true</a></li><br>
+        <li><a href="#else" class="li">Use <kbd>else</kbd> to specify a block of code to be executed, if the same condition is false</a></li><br>
+        <li><a href="#elseif" class="li">Use <kbd>else if</kbd> to specify a new condition to test, if the first condition is false</a></li><br>
+        <li><a href="#switch" class="li">Use <kbd>switch</kbd> to specify many alternative blocks of code to be executed</a></li><br>
+
+    <h2 class="text-center" id="if">IF STATEMENT</h2><br>
+    <img class="fluid" src="image/if.png" title="IF STATEMENT" alt="PICTURE OF IF STATEMENT"><br>
+    <p>In the example above, we test two values to find out if varible name grade is greater than or equal to 75 and not greater than 90. If the condition is true, print <kbd>Your are Good!</kbd></p><br><br>
+
+    <h2 class="text-center" id="else">ELSE STATEMENT</h2><br>
+    <img class="fluid"src="image/else.png" title="ELSE STATEMENT" alt="PICTURE OF ELSE STATEMENT"><br><br>
+    <p>In the example above, we test two values to find out if variable name grade is greater than or equals to 90. If the condition is true, print <kbd>Your are Excellent!</kbd></p><br><br>
+
+    <h2 class="text-center" id="elseif">ELSE IF STATEMENT</h2><br>
+    <img class="fluid"src="image/elseif.png" title="ELSE IF STATEMENT" alt="PICTURE OF ELSE IF STATEMENT"><br><br>
+    <p>In the example above, we test two values to find out if variable name grade is less than to 75. If the condition is true, print <kbd>Your are Excellent!</kbd></p><br><br>
+
+    <h2 class="text-center" id="switch">SWITCH STATEMENT</h2><br>
+    <img class="fluid"src="image/switch.png" title="SWITCH STATEMENT" alt="PICTURE OF SWITCH STATEMENT"><br><br>
+    <p>Use the <kbd>switch</kbd> statement to select one of many code blocks to be executed.</p><br><br>
+
+    <h3>The break Keyword</h3>
+    <li>When Java reaches a <kbd>break</kbd> keyword, it breaks out of the switch block.</li>
+    <li>This will stop the execution of more code and case testing inside the block.</li>
+    <li>When a match is found, and the job is done, it's time for a break. There is no need for more testing.</li>
+    <br><br><br>
+
+    <h5 class="text-left">example:</h5><br>
+    <blockquote>int day = 4;<br>
+        switch (day) {<br>
+          case 1:<br>
+            System.out.println("Monday");<br>
+            break;<br>
+          case 2:<br>
+            System.out.println("Tuesday");<br>
+            break;<br>
+          case 3:<br>
+            System.out.println("Wednesday");<br>
+            break;<br>
+          case 4:<br>
+            System.out.println("Thursday");<br>
+            break;<br>
+          case 5:<br>
+            System.out.println("Friday");<br>
+            break;<br>
+          case 6:<br>
+            System.out.println("Saturday");<br>
+            break;<br>
+          case 7:<br>
+            System.out.println("Sunday");<br>
+            break;<br>
+        }<br>
+        // Outputs "Thursday" (day 4)
+    </blockquote>
+    <br>
+    <h5 class="text-left"><a href="https://www.w3schools.com/java/tryjava.asp?filename=demo_switch" class="example">Try it Yourself >> </a></h5><br>
+    <br><br>
+    </div>
+</div>
+<br><br>
+  </body>

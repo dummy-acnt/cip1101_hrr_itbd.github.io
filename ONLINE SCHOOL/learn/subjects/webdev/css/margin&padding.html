@@ -1,0 +1,196 @@
+
+<!Doctype html>
+<html lang="en">
+  <head>
+      <!--TAUP, NORSIMA-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+   
+    <title>CSS MARGIN & PADDING</title>
+  </head>
+  
+   <style>
+   body{
+    background-color: #282a35;
+    color: #f2f2f2;
+    font-family: "Tahoma";
+    width:auto;
+       
+    }
+    h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  .size{
+    width:  45%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+  @media only screen and (max-width: 480px) {
+   .size{
+      width:100%;
+  }}
+    
+/* the side navigation menu */
+.sidebar {
+  margin-top: 7%;
+  padding: 0;
+  width:fit-content;
+  position: fixed;
+  height:100%;
+  overflow: auto;
+  background-color: #f2f2f2;
+}
+
+
+.sidebar a {
+  display: block;
+  color:  #1E1E1E;
+  padding: 16px;
+  text-decoration: none;
+  margin:0;
+  line-height:50px;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: red;
+  color: white;
+  margin: 0;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 250px;
+  padding: 1px 16px;
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    display: inline-block;
+    font-size: 8px;
+  }
+}
+.nav {
+    background-color: #f2f2f2;
+    height: 90px;
+    width: 100%;
+    display: block;
+    position: fixed;
+}
+  
+.nav a {
+    color: #1E1E1E;
+    text-align: center;
+    margin-left: 5%;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 10px;
+    font-family:'Franklin Gothic Medium';
+    display:inline;
+}
+
+.nav a:hover{
+    text-decoration: 5px underline #EB3F3F;
+}
+
+.nav img{
+    max-width: 90px;
+    float: left;
+}
+
+     </style>
+     <div class="nav">
+      <div>
+          <a href="../../../../index.html"><img src="../../../../gallery/icon.png"></a>
+      </div>
+      <a href="../../../learn.html">Learn</a>
+      <a href="../../../../exercise/exercise.html">Exercise</a>
+      <a href="../../../../Quiz/QUIZ.html">Quiz</a>
+  </div>
+     <div class="sidebar" >
+        <a  href="css.html"><b>CSS INTRODUCTION</b></a>
+        <a href="selctors.html"><b>CSS SELECTORS</b></a>
+        <a  href="cssBackground.html"><b>CSS BACKGROUND</b></a>
+        <a href="cssTextFormat.html"><b>CSS TEXT FORMAT</b></a>
+        <a href="cssBorders.html"><b>CSS BORDERS</b></a>
+        <a href="cssFonts.html"><b>CSS FONTS</b></a>
+        <a href="cssComments.html"><b>CSS COMMENTS</b></a>
+        <a class="active" href="margin&padding.html"><b>CSS MARGIN & PADDING</b></a>
+      
+      </div>
+<div class="content">
+<div class="container">
+    <br>
+  
+    <h1 class="text-center text-danger">CSS MARGIN & PADDING</h1> <br>
+    <br><hr>
+    <br><br><br>
+    <h3 class="text-warning">CSS MARGIN</h3><br>
+    <p>CSS margins are used to create space around the element. We can set the different sizes of margins for individual sides(top, right, bottom, left).</p>
+   <ul>
+    <li><u>margin-top:</u> It is used to set the top margin of an element.</li>
+    <br>
+    <li><u>margin-right</u> used to set the right margin of an element.</li>
+    <br>
+    <li><u>margin-bottom: </u>used to specify the amount of margin to be used on the bottom of an element.</li>
+    <br>
+    <li><u>margin-left:</u>uused to set the width of the margin on the left of the desired element.</li>
+    </ul><br>
+    <br>
+    <img src="../../../../gallery/4values.PNG" class="size" ><br>
+    <img src="../../../../gallery/3values.PNG"class="size" ><br>
+    <img src="../../../../gallery/2values.PNG"class="size" ><br>
+    <img src="../../../../gallery/1value.PNG" class="size"><br>
+    <hr>
+    <br>
+    <h3 class="text-warning">CSS PADDING</h3><br>
+    <p>Paddings in CSS are used to add space around an element inside a set boundary. Different paddings may be selected for each side (top, right, bottom, left).</p>
+    <ul>
+      <li><u>padding-top:</u> It is used to set the top padding of an element.</li>
+      <br>
+      <li><u>padding-right: </u> used to set the right padding of an element.</li>
+      <br>
+      <li><u>padding-bottom: </u>used to specify the amount of padding to be used on the bottom of an element.</li>
+      <br>
+      <li><u>padding-left: </u>used to set the width of the padding on the left of the desired element.</li>
+      </ul><br>
+      <img src="../../../../gallery/adding values.PNG"class="size" ><br>
+      <img src="../../../../gallery/padding values3.PNG"class="size" ><br>
+      <img src="../../../../gallery/padding values2.PNG"class="size" ><br>
+      <img src="../../../../gallery/padding values1.PNG"class="size" ><br>
+      <hr>
+
+
+
+
+    </div>
+</div>
+<br><br>
+
+
+
+
+
+  </body>
