@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="newSpace">
+    <meta charset="utf-8">
+    <meta name="author" content="STUDENT, ANGELYN CABER">
+    <link rel="stylesheet" href="../design/QUIZ_HTML.css">
+<title>HTML QUIZ</title>
+
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <a href="../index.html"><img src="../gallery/icon.png"></a>
+        </div>
+        <a href="../learn/learn.html">Learn</a>
+        <a href="../exercise/exercise.html">Exercise</a>
+        <a href="QUIZ.html">Quiz</a>
+    </div>
+    <div class="nav1">
+        <a href="QUIZ_CSS.html">CSS</a><br><br><br>
+        <a href="QUIZ_PYTHON.html">Python</a><br><br><br>
+        <a href="QUIZ_JAVASCRIPT.html">JavaScript</a><br><br><br>
+        <a href="QUIZ_JAVA.html">Java</a><br><br><br>
+        <a href="QUIZ_HTML.html">HTML</a><br><br>
+        <a href="QUIZ_SearchAlgorithm.html">Search<br>Algorithm</a><br>
+        <a href="QUIZ_DataStructures.html">Data<br>Structures</a><br>
+        <a href="QUIZ_SortingTechniques.html">Sorting<br>Techniques</a><br>
+    </div>
+<div id="main">
+<div id="header">
+<h1>HTML QUIZ</h1>
+</div>
+<form id="form1">
+
+<h2>1. Choose the correct HTML element for the largest heading:</h2>
+<label for="heading_1"><input type="radio" name="heading" value="1" id="heading_1"/>＜h1＞</label>
+<label for="heading_2"><input type="radio" name="heading" value="0" id="heading_2"/>＜Head＞</label>
+<label for="heading_3"><input type="radio" name="heading" value="0" id="heading_3"/>＜h6＞</label>
+<label for="heading_4"><input type="radio" name="heading" value="0" id="heading_4"/>＜heading＞</label>
+
+<h2>2. What is the correct HTML element for inserting a line break?</h2>
+<label for="break_1"><input type="radio" name="linebreak" value="0" id="break_1"/>＜Break＞</label>
+<label for="break_2"><input type="radio" name="linebreak" value="1" id="break_2"/>＜br＞</label>
+<label for="break_3"><input type="radio" name="linebreak" value="0" id="break_3" />＜lb＞</label>
+
+<h2>3. Which is the correct file extension for a web page?</h2>
+<label for="file_1"><input type="radio" name="file" value="0" id="file_1"/>.ppt</label>
+<label for="file_2"><input type="radio" name="file" value="0" id="file_2"/>.doc</label>
+<label for="file_3"><input type="radio" name="file" value="1" id="file_3" />.html</label>
+<label for="file_4"><input type="radio" name="file" value="0" id="file_4" />.txt</label>
+
+<h2>4. A basic functionality of browsers is to translate HTML documents into viewable webpages.</h2>
+<label for="true"><input type="radio" name="browser" value="1" id="true" />True</label>
+<label for="false"><input type="radio" name="browser" value="0" id="false" />False</label>
+
+<h2>5. Choose the correct HTML element to define emphasized text</h2>
+<label for="emphasize_1"><input type="radio" name="emphasize" value="0" id="emphasize_1"/>＜i＞</label>
+<label for="emphasize_2"><input type="radio" name="emphasize" value="1" id="emphasize_2"/>＜em＞</label>
+<label for="emphasize_3"><input type="radio" name="emphasize" value="0" id="emphasize_3" />＜italic＞</label>
+
+<h2>6. Which character is used to indicate an end tag?</h2>
+<label for="endtag_1"><input type="radio" name="endtag" value="0" id="endtag_1" />*</label>
+<label for="endtag_2"><input type="radio" name="endtag" value="1" id="endtag_2" />/</label>
+<label for="endtag_3"><input type="radio" name="endtag" value="0" id="endtag_3" />＜</label>
+
+<h2>7. What does HTML stand for?</h2>
+<label for="acronym_1"><input type="radio" name="acronym" value="1" id="acronym_1" />Hypertext Markup Language</label>
+<label for="acronym_2"><input type="radio" name="acronym" value="0" id="acronym_2" />Hypertension Markup Language</label>
+<label for="acronym_3"><input type="radio" name="acronym" value="0" id="acronym_3" />Hypertext Makeup Language </label>
+
+<h2>8. Inline elements are normally displayed without starting a new line.</h2>
+<label for="true1"><input type="radio" name="inline" value="1" id="true1" />True</label>
+<label for="false1"><input type="radio" name="inline" value="0" id="false1" />False</label>
+
+<h2>9. All of the content you wish to appear on the screen should be in which tag?</h2>
+<label for="main_1"><input type="radio" name="content" value="0" id="main_1"/>＜main＞</label>
+<label for="content"><input type="radio" name="content" value="0" id="content"/>＜content＞</label>
+<label for="body"><input type="radio" name="content" value="1" id="body"/>＜body＞</label>
+<label for="html"><input type="radio" name="content" value="0" id="html"/>＜html＞</label>
+
+<h2>10. HTML comments start with ＜!-- and end with --＞</h2>
+<label for="true_11"><input type="radio" name="comments" value="1" id="true_11" />True</label>
+<label for="false_11"><input type="radio" name="comments" value="0" id="false_11" />False</label>
+<label for="maybe"><input type="radio" name="comments" value="0" id="maybe" />May be</label>
+
+
+<center><button type="submit" value="Submit">Submit</button>
+<button type="reset" value="Reset">Reset</button></center><br>
+<hr width="100%" size="2" color="#282A35" align="center">
+</form>
+
+<p>Your score is: <span id="grade"> ___</span></p>
+<p id="grade2"></p>
+
+<p><a href="ANSWER_HTML.html" id="answer">View correct answers</a><br></p>
+
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+    heading = parseInt(document.querySelector('input[name = "heading"]:checked').value);
+    linebreak = parseInt(document.querySelector('input[name = "linebreak"]:checked').value);
+    file = parseInt(document.querySelector('input[name = "file"]:checked').value);
+    browser = parseInt(document.querySelector('input[name = "browser"]:checked').value);
+    emphasize = parseInt(document.querySelector('input[name = "emphasize"]:checked').value);
+    endtag = parseInt(document.querySelector('input[name = "endtag"]:checked').value);
+    acronym = parseInt(document.querySelector('input[name = "acronym"]:checked').value);
+    inline = parseInt(document.querySelector('input[name = "inline"]:checked').value);
+    content = parseInt(document.querySelector('input[name = "content"]:checked').value);
+    comments = parseInt(document.querySelector('input[name = "comments"]:checked').value);
+
+	   result = heading + linebreak + file + browser + emphasize + endtag + acronym + inline + content + comments;
+
+	document.getElementById("grade").innerHTML = result;
+    
+ grading = [
+	   {score:0},
+	   {score:1}
+	   ];
+
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+	  }
+	  }
+    return false;
+}
+
+</script>
+</div>
+<div class="footer">
+    <a href="../aboutus/aboutus.html">About Us</a>
+    <a href="../contactus/contactus.html">Contact Us</a>
+    <a href="../gallery/gallery.html">Photo Gallery</a>
+    <a href="../author/authors.html">About The Author</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="newSpace">
+    <meta charset="utf-8">
+    <meta name="author" content="STUDENT, ANGELYN CABER">
+    <link rel="stylesheet" href="../design/QUIZ_SORT.css">
+    <title>SORTING TECHNIQUES QUIZ</title>
+</head>
+<body>
+    <div class="nav">
+        <div>
+            <a href="../index.html"><img src="../gallery/icon.png"></a>
+        </div>
+        <a href="../learn/learn.html">Learn</a>
+        <a href="../exercise/exercise.html">Exercise</a>
+        <a href="QUIZ.html">Quiz</a>
+    </div>
+    <div class="nav1">
+        <a href="QUIZ_CSS.html">CSS</a><br><br><br>
+        <a href="QUIZ_PYTHON.html">Python</a><br><br><br>
+        <a href="QUIZ_JAVASCRIPT.html">JavaScript</a><br><br><br>
+        <a href="QUIZ_JAVA.html">Java</a><br><br><br>
+        <a href="QUIZ_HTML.html">HTML</a><br><br>
+        <a href="QUIZ_SearchAlgorithm.html">Search<br>Algorithm</a><br>
+        <a href="QUIZ_DataStructures.html">Data<br>Structures</a><br>
+        <a href="QUIZ_SortingTechniques.html">Sorting<br>Techniques</a><br>
+    </div>
+<div id="main">
+<div id="header">
+<h1>SORTING TECHNIQUES QUIZ</h1>
+</div>
+<form id="form1">
+
+<h2>1. What does a sorting algorithm do?</h2>
+<label for="algorithm_1"><input type="radio" name="algorithm" value="0" id="algorithm_1"/>Finds an item of data in a set of data</label>
+<label for="algorithm_2"><input type="radio" name="algorithm" value="0" id="algorithm_2" />Saves a set of data</label>
+<label for="algorithm_3"><input type="radio" name="algorithm" value="1" id="algorithm_3" />Puts a list of items into order</label>
+
+<h2>2. What does a bubble sort do?</h2>
+<label for="bubble_1"><input type="radio" name="bubble" value="1" id="bubble_1"/>Sorts a list by comparing two items that are side by side, to see which is out of order</label>
+<label for="bubble_2"><input type="radio" name="bubble" value="0" id="bubble_2"/>Separates a list of data into different collections of data, before sorting and gathering back into a list</label>
+<label for="bubble_3"><input type="radio" name="bubble" value="0" id="bubble_3" />Finds an item of data in a list</label>
+
+<h2>3. How many passes will a bubble sort go through?</h2>
+<label for="passes_1"><input type="radio" name="passes" value="0" id="passes_1" />Only one pass</label>
+<label for="passes_2"><input type="radio" name="passes" value="0" id="passes_2" />Two passes</label>
+<label for="passes_3"><input type="radio" name="passes" value="1" id="passes_3" />Several passes - until the data is fully ordered</label>
+
+<h2>4. Why does a bubble sort do a final pass even when the data is in the correct order?</h2>
+<label for="final_1"><input type="radio" name="final" value="0" id="final_1" />To save the data</label>
+<label for="final_2"><input type="radio" name="final" value="1" id="final_2" />It does not recognise that the data is in order until the final pass requires no changes</label>
+<label for="final_3"><input type="radio" name="final" value="0" id="final_3" />It needs to do this to put the data back in to a list</label>
+
+<h2>5. Which of the following is not a type of sorting algorithm?</h2>
+<label for="file_1"><input type="radio" name="file" value="0" id="file_1"/>Merge sort</label>
+<label for="file_2"><input type="radio" name="file" value="0" id="file_2"/>Insertion sort</label>
+<label for="file_3"><input type="radio" name="file" value="1" id="file_3"/>Long sort</label>
+
+<h2>6. Which of the following is an advantage of a bubble sort?</h2>
+<label for="advantage_1"><input type="radio" name="advantage" value="1" id="advantage_1" />It is a very small and simple computer program</label>
+<label for="advantage_2"><input type="radio" name="advantage" value="0" id="advantage_2" />It takes a very long time to run</label>
+<label for="advantage_3"><input type="radio" name="advantage" value="0" id="advantage_3" />It is very quick</label>
+
+<h2>7. The Selection Sort algorithm repeatedly finds the smallest value in the list, then swaps it into its<br>
+&nbsp;&nbsp;&nbsp;&nbsp;sorted position.</h2>
+<label for="true"><input type="radio" name="value" value="1" id="true" />True</label>
+<label for="false"><input type="radio" name="value" value="0" id="false" />False</label>
+
+<h2>8. Why might a sorting algorithm be needed before a search?</h2>
+<label for="search_1"><input type="radio" name="search" value="0" id="search_1" />Data is less when sorted</label>
+<label for="search_2"><input type="radio" name="search" value="0" id="search_2" />Data cannot be searched if it not sorted</label>
+<label for="search_3"><input type="radio" name="search" value="1" id="search_3" />Data can be retrieved faster and easier when sorted</label>
+<label for="search_4"><input type="radio" name="search" value="0" id="search_4" />Data must always be sorted before it is searched</label>
+
+<h2>9. Repeatedly compare neighbor pairs and swap if necessary</h2>
+<label for="compare_1"><input type="radio" name="compare" value="1" id="compare_1" />Bubble Sort</label>
+<label for="compare_2"><input type="radio" name="compare" value="0" id="compare_2" />Insertion Sort</label>
+<label for="compare_3"><input type="radio" name="compare" value="0" id="compare_3" />Selection Sort</label>
+
+<h2>10. Insertion Sort is an algorithm that selects the smallest element from an unsorted list in each iteration<br>
+    &nbsp;&nbsp;&nbsp;&nbsp; and places that element at the beginning of the unsorted list.</h2>
+<label for="true_1"><input type="radio" name="iteration" value="0" id="true_1" />True</label>
+<label for="false_1"><input type="radio" name="iteration" value="1" id="false_1" />False</label>
+
+
+<center><button type="submit" value="Submit">Submit</button>
+<button type="reset" value="Reset">Reset</button></center><br>
+<hr width="100%" size="2" color="#282A35" align="center">
+</form>
+
+<p>Your score is: <span id="grade"> ___</span></p>
+<p id="grade2"></p>
+
+<p><a href="ANSWER_SortingTechniques.html" id="answer">View correct answers</a><br></p>
+
+<script>
+document.getElementById("form1").onsubmit=function() {
+    algorithm = parseInt(document.querySelector('input[name = "algorithm"]:checked').value);
+    bubble = parseInt(document.querySelector('input[name = "bubble"]:checked').value);
+    passes = parseInt(document.querySelector('input[name = "passes"]:checked').value);
+    final = parseInt(document.querySelector('input[name = "final"]:checked').value);
+    file = parseInt(document.querySelector('input[name = "file"]:checked').value);
+    advantage = parseInt(document.querySelector('input[name = "advantage"]:checked').value);
+    value = parseInt(document.querySelector('input[name = "value"]:checked').value);
+    search = parseInt(document.querySelector('input[name = "search"]:checked').value);
+    compare = parseInt(document.querySelector('input[name = "compare"]:checked').value);
+    iteration = parseInt(document.querySelector('input[name = "iteration"]:checked').value);
+
+	   result = algorithm + bubble + passes + final + file + advantage + value + search + compare + iteration;
+
+	document.getElementById("grade").innerHTML = result;
+    
+ grading = [
+	   {score:0},
+	   {score:1}
+	   ];
+
+for(i=0; i<grading.length; i++) {
+    if(result == grading[i].score) {
+	  }
+	  }
+    return false;
+}
+
+</script>
+
+
+</div>
+</body>
+</html>
